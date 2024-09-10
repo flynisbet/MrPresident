@@ -1,0 +1,38 @@
+body{
+   background-color:antiquewhite;
+}
+
+.navbar{
+    display:flex; 
+    background-color: whitesmoke;
+    
+}
+
+a{
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(205, 145, 145);
+}
+div.navcon{
+    
+    display: inline;
+    float: right; 
+   
+}
+div.logo{
+    /* display:flex;  */
+
+    background-color: azure;
+    justify-content: flex-start;
+    
+}
+
+
+
+
+
+
+
