@@ -1,37 +1,33 @@
-body{
-   background-color:antiquewhite;
-}
 
 .navbar{
     display:flex; 
-    background-color: whitesmoke;
-    
+    background-color: whitesmoke; 
 }
 
-a{
-    padding: 15px 10px;
-    text-decoration: none;
+.navcon{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo{
+    font-size: 35px; font-weight: 600; color:blue;
 }
 
 a:hover{
     background-color: rgb(205, 145, 145);
 }
-div.navcon{
-    
-    display: inline;
-    float: right; 
-   
-}
-div.logo{
-    /* display:flex;  */
 
-    background-color: azure;
-    justify-content: flex-start;
-    
+li {
+    list-style: none;
+    display: inline-block;
 }
 
-
-
+a{
+    padding-left: 15px;
+    padding-right:15px;
+    text-decoration: none;
+}
 
 
 
