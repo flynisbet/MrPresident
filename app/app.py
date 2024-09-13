@@ -1,6 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template, redirect, url_for
+
+
+
 
 app = Flask(__name__)
-@app.route("/hello")
+@app.route("/")
 def hello():
-    return "Hello, World!"
+    return {'hello': 'world'}
