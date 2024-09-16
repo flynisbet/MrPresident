@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap');
+
+*{
+    font-family: "Playfair Display", serif; 
+    font-weight: 300;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.whiteHouse{
+    border-radius: 20px;
+    border: 5px solid;
+    margin: 30px;
+}
+#section__about{
+    display: flex;
+    margin: 50px;
+    padding: 25px 50px;
+    align-self: center;
+    flex-direction: column;
+    
+}
+
+.containter__author{
+    margin: 50px; 
+    padding: 50px; 
+}
+
+.about__author, .about__purpose{
+    display: flex; 
+    flex-direction: column;
+    width: 100%vh; 
+    height: 100%vh;
+    text-align: center;
+    color: white;
+    margin: 50px;
+
+}
+
+.author__photo img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+.author1, 
+.author2, 
+.author3{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+   
+}
+
+.author__text p {
+    font-size: 20px;
+}
