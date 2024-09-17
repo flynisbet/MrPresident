@@ -16,12 +16,13 @@ li, a {
     text-decoration: none;
     color: #F5F5F5;
 }
-
-.whiteHouse{
+p
+.whiteHouse img{
     border-radius: 20px;
-    border: 5px solid;
+    border: 5px solid white;
     margin: 30px;
 }
+
 #section__about{
     display: flex;
     margin: 50px;
@@ -52,7 +53,6 @@ li, a {
 
 .author__photo{
     width: 30%;
-    border: 3px solid white;
     min-width: 175px;
 }
 .author__photo img {
@@ -70,7 +70,7 @@ li, a {
     align-items: center;
     justify-content: center;
     padding: 15px 0;
-    border: 3px solid brown;
+    
     
    
 }
@@ -78,10 +78,20 @@ li, a {
     padding: 0 20px;
     width:100%;
     height: 100%;
-    border: 3px solid red;
     min-width: 400px;
-    text-align: center;;
+    text-align: center;
 }
-.author__text p {
+p {
     font-size: 20px;
+}
+
+.tiny_picture img{
+    width: 50px;
+    border-radius: 15%;
+    
+}
+.contact_author{
+    display: flex;
+    flex-direction: column;
+
 }
