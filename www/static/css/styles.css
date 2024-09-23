@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap');
 
-*{
+
+h1{
+    font-family: "Playfair Display", serif; 
+    text-align: center;
+    font-style: italic;
+    color: #F5F5F5;
+    padding: 20px;
+    font-size: 40px;
+
+}
+body{
     background-color: #1E1E2F;
     margin: 0; 
     padding: 0;   
@@ -121,4 +131,58 @@ li, a {
     transform: none;
 }
 
+#timeline ul{
+    padding: 50px 0;
+}
 
+#timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 5px;
+    margin: 0 auto;
+    padding-top: 30px;
+    background-color: #c36666;
+}
+
+#timeline ul li .president_box{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    background-color: #F5F5F5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+#timeline ul li .president_box .box_heading{
+
+    bottom: 0;
+    background-color: #c36666;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-content: center;
+}
+
+#timeline ul li .president_box .box_body{
+    background-color: #F5F5F5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.title{
+    text-align: center;
+    color:#F5F5F5;
+    font-size: 20px;
+}
+
+#timeline ul li .president_box .box_body img{
+    width: auto;
+    
+}
+
+#timeline ul li .president_box button{
+    align-items: ;
+}
