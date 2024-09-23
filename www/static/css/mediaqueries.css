@@ -5,4 +5,17 @@
     #hamburger-nav{
         display:flex;
     }
+    .author1, .author2, .author3{
+        flex-direction: column;
+    }
+
+    #section__about{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .containter__author{
+        margin: 10px; 
+        padding: 10px; 
+    }
 }

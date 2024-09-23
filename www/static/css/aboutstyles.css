@@ -12,6 +12,7 @@ h2{
     font-size: 35px;
 }
 
+
 *{
     font-family: "Playfair Display", serif; 
     font-weight: 300;
@@ -19,12 +20,27 @@ h2{
     text-decoration: none;
     color: #F5F5F5;
 }
-p
-.whiteHouse img{
+
+.menu-item a{
+    display: block; 
+    padding:10px;
+    text-align: center; 
+    font-size: 1.5rem;
+    color: white; 
+    text-decoration: none; 
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.whiteHouse{
     border-radius: 20px;
     border: 5px solid white;
     margin: 30px;
+    width: 100%; 
+    height: 100%;
 }
+
 
 #section__about{
     display: flex;
@@ -40,16 +56,15 @@ p
 }
 
 .about__purpose{
-    min-width: 300px;
+    min-width: auto;
     text-align: center;
+    align-items: center;
 }
 
 
 .about__author, .about__purpose{
     display: flex; 
     flex-direction: column;
-    width: 100%vh; 
-    height: 100%vh;
     color: white;
     margin: 20px;
 }
@@ -73,9 +88,6 @@ p
     align-items: center;
     justify-content: center;
     padding: 15px 0;
-    
-    
-   
 }
 .author__text{
     padding: 0 20px;
