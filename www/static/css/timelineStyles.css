@@ -1,34 +1,88 @@
-
 *{
     color: white;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 #timeline{
     width: 100%;
-    max-height: 100vh; 
-    padding: 100px 15px; 
-    border: 2px solid white;
-    
+    min-height: 100vh;
+    padding: 100px 15px;
 }
 .timeline-containers{
-    max-width: 1000px;
-    position: relative; 
+    max-width: 1200px;
+    position: relative;
     margin: auto;
-    border: 2px solid blue;
+    flex-wrap: wrap;
+    display:flex;
 }
-
-
-
+.timeline-container{
+   min-width: 300px;
+   margin-bottom: 40px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+}
+.timeline-container:nth-child(odd){
+    padding-right: calc(50% + 30px) ;
+    text-align: right;
+}
+.timeline-container:nth-child(even){
+    padding-left: calc(50% + 30px) ;
+}
+.textbox{
+    background-color: #2F363E;
+    padding: 30px;
+    border-radius: 5px;
+}
+.timeline-containers::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    left: calc(50% - 1px);
+}
+.timeline-container:last-child{
+    margin-bottom: 0;
+}
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    margin-bottom: 20px;
+    top: 20px;
+    left: calc(50% - 7px);
+}
+.timeline-container:nth-child(odd) .timeline-rank{
+    margin: 6px 0 15px auto;
+}
+ .timeline-rank{
+    font-size: 2rem;
+    color: gold;
+    margin: 6px 0 15px;
+    position: relative;
+}
+.textbox h3{
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500px;
+}
+.textbox{
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 22px;
+}
 .textbox img{
     position: relative;
-    width: 80px; 
-    border-radius: 50%; 
+    width: 80px;
+    border-radius: 30%;
 }
-
 .textbox .btn{
-    background-color: blue; 
+    background-color: blue;
     color: white;
 }
