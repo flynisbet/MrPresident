@@ -5,7 +5,7 @@
     #hamburger-nav{
         display:flex;
     }
-    .author1, .author2, .author3{
+    .author{
         flex-direction: column;
     }
 
@@ -18,4 +18,28 @@
         margin: 10px; 
         padding: 10px; 
     }
+
+    /* Timeline */
+    .timeline-containers::before{
+        left: 5px;
+    }
+    .timeline-container:nth-child(odd){
+        padding-right: 0; 
+        text-align: left; 
+    }
+
+    .timeline-container:nth-child(odd) .timeline-rank{
+        margin: 6px 0 15px;
+    }
+
+    .timeline-container:nth-child(odd), 
+    .timeline-container:nth-child(even){
+        padding-left: 37px; 
+    }
+
+    .timeline-dot{
+        left: 0px; 
+    }
+
 }
+

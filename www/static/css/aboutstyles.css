@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap');
 
-
-
 h1{
     font-size: 50px;
     font-style: italic;
@@ -11,8 +9,6 @@ h1{
 h2{
     font-size: 35px;
 }
-
-
 *{
     font-family: "Playfair Display", serif; 
     font-weight: 300;
@@ -25,13 +21,11 @@ h2{
     display: block; 
     padding:10px;
     text-align: center; 
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     color: white; 
     text-decoration: none; 
     transition: all 0.5s ease-in-out;
 }
-
-
 
 .whiteHouse{
     border-radius: 20px;
@@ -40,7 +34,6 @@ h2{
     width: 100%; 
     height: 100%;
 }
-
 
 #section__about{
     display: flex;
@@ -81,9 +74,7 @@ h2{
     justify-content: end;
 }
 
-.author1, 
-.author2, 
-.author3{
+.author{
     display: flex; 
     align-items: center;
     justify-content: center;

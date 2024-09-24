@@ -9,6 +9,15 @@
     min-height: 100vh;
     padding: 100px 15px;
 }
+
+.timetine-title{
+    font-size: 2.5rem;
+    font-weight: 500px;
+    text-align: center;
+    padding: 30px 15px;
+    Margin: 30px;
+}
+
 .timeline-containers{
     max-width: 1200px;
     position: relative;
@@ -17,7 +26,7 @@
     display:flex;
 }
 .timeline-container{
-   min-width: 300px;
+   
    margin-bottom: 40px;
    width: 100%;
    display: flex;
@@ -76,6 +85,7 @@
     font-size: 16px;
     font-weight: 300px;
     line-height: 22px;
+    min-width: 300px;
 }
 .textbox img{
     position: relative;
@@ -83,6 +93,33 @@
     border-radius: 30%;
 }
 .textbox .btn{
-    background-color: blue;
-    color: white;
+    background-color: darkorchid;
+    border-radius: 3px;
 }
+
+/* Inspired Deisng: 
+Youtube 1: https://www.youtube.com/watch?v=L9W33EuGjoY&list=LL&index=1
+Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
+*/
+
+/* animation */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5); /* Use transform for scaling */
+    }
+    to {
+        opacity: 1; 
+        transform: scale(1); /* Use transform for scaling */
+    }
+}
+
+.timeline-container {
+    animation: appear linear; 
+    animation-timeline: view(); 
+    animation-range: entry 0 cover 40%;
+}
+/* Link to the Tutorial :  https://www.youtube.com/watch?v=0TnO1GzKWPc&t=82s */
+
+
+
