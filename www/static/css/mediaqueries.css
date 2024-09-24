@@ -4,6 +4,8 @@
     }
     #hamburger-nav{
         display:flex;
+        z-index: 1;
+        margin-bottom: 20px;
     }
     .author{
         flex-direction: column;
