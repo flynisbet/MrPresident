@@ -26,9 +26,11 @@ let president = [];
 function placeInfo(){
     // Get the timeline containers class to add containers to once we create them
     let conts = document.querySelector('.timeline-containers');
-    for (pres in jsonData){
+    const keys = Object.keys(jsonData).map(Number);
+
+    for (let i = keys.length; i > 0; i--) {
         // Get president info
-        let presInfo = jsonData[pres];
+        let presInfo = jsonData[i];
 
         // Create container to add all the stuff to
         let cont = document.createElement('div');
@@ -109,3 +111,14 @@ search.addEventListener('keyup', function(event){
     })
 });
 
+// Function to toggle the theme
+function toggleTheme(isDarkMode) {
+    let light = document.getElementById('theme-toggle').value;
+    let body = document.body;
+    if (light) {
+        body.classList.add('light-mode');
+    } 
+    else {
+        body.classList.remove('light-mode');
+    }
+}
