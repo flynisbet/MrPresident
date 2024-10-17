@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 h1{
@@ -334,7 +335,6 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     box-sizing: border-box;
 }
 
-/* hover change the color */
 #results li:hover {
     background-color: #404552;
 }
@@ -344,3 +344,35 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     border-bottom: none; 
 }
 
+/* up botton */
+#flyIcon {
+    position: fixed;     
+    right: 20px;         
+    bottom: 20px;       
+    width: 50px;       
+    height: 70px;        
+    display: flex;     
+    justify-content: center; 
+    align-items: center; 
+    background-color: #1E1E2F; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;       
+    transition: background-color 0.3s ease; 
+}
+
+#flyIcon img {
+    width: 100%;         
+    height: auto;       
+    filter: invert(1);   
+}
+
+/* Hover effect */
+#flyIcon:hover {
+    background-color: #404552; 
+    cursor: pointer;
+}
+
+#flyIcon:hover img {
+    filter: invert(0.5);
+}

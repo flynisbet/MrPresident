@@ -36,6 +36,9 @@ function placeInfo(){
         let cont = document.createElement('div');
         cont.classList = 'timeline-container';
 
+        //add identifying ID to each div 
+        cont.id = `president-${presInfo['No']}`;
+
         // Add name since it isn't in the textbox
         // Create text node, create element, append
         let presNum = document.createTextNode(presInfo['No']);
@@ -85,6 +88,9 @@ function placeInfo(){
 }
 
 
+// searchBar powered by : sheCodes
+//link : https://www.shecodes.io/athena/38555-how-to-create-a-search-bar-using-html-css-json-and-javascript#:~:text=%22:%22F.-,Scott%20Fitzgerald%22%2C%22year%22:%221925%22%7D,types%20in%20the%20search%20input.
+
 // SearchBar: Get input element and results list
 let search = document.getElementById('search');
 let results = document.getElementById('results');
@@ -111,6 +117,32 @@ search.addEventListener('keyup', function(event){
     })
 });
 
+function scrollToPresident(name) {
+    console.log(`Searching for president: ${name}`);
+  
+    // Finding the president 
+    let foundPresident = Object.values(jsonData).find(pres => 
+        pres['Name'].toLowerCase().trim() === name.toLowerCase().trim()
+    );
+    
+    if (foundPresident) {
+        console.log(`Found president: ${foundPresident['Name']} with id president-${foundPresident['No']}`);
+        let element = document.getElementById(`president-${foundPresident['No']}`);
+        
+        if (element) {
+            console.log(`Scrolling to president: ${foundPresident['Name']}`);
+            element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.log(`Element with id president-${foundPresident['No']} not found.`);
+        }
+    } else {
+        console.log('President not found.');
+    }
+}
+
+
+
+
 // Function to toggle the theme
 function toggleTheme(isDarkMode) {
     let light = document.getElementById('theme-toggle').value;
@@ -122,3 +154,20 @@ function toggleTheme(isDarkMode) {
         body.classList.remove('light-mode');
     }
 }
+
+
+// link resource: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+//MDN: 
+function scrollUp(){
+    window.scrollTo({
+        top: 0,           // Scroll to the top of the page
+        behavior: 'smooth' // Optional: Use 'smooth' for smooth scrolling
+    });
+}
+
+// window.onload = function() {
+//     document.querySelector('#first-section').scrollIntoView({
+//         behavior: 'smooth', // Optional: Smooth scrolling
+//         block: 'start'      // Aligns the element to the top of the viewport
+//     });
+// };
