@@ -8,10 +8,10 @@
     <title>Hello_President</title>
 
 </head>
-<body>
+<body onload = 'getData()'>
     <nav id="desktop-nav">
         <div class='logo'> 
-        <a href="#"> Mr.President</a>    
+        <a href="#">Mr.President</a>    
         </div>
         <ul class="nav-menu">
             <li> <a href="index.html"> Home</a></li>
@@ -25,7 +25,7 @@
     <nav id="hamburger-nav">
         <div class="logo">
             <a href="#"> Mr.President</a> 
-        </div>
+    </div>
 
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -44,15 +44,24 @@
         </div>
         
     </nav>
-    
+
+    <div class="searchBox">
+        <input type="text" placeholder='Search....' id ='search'>
+        <a href="#">
+            <img src="../asset/img/search.png">
+        </a>    
+        <ul id='results'>
+            
+        </ul>
+    </div>
+
+
     <section id ="timeline">
         <div class="timetine-title">Presidents Of United States Of America</div>
-        <div class="timeline-containers">
-
-        </div>
+        <div class="timeline-containers"></div>
     </div>
     </section>
-       
+    
    <script src="../static/script/script.js" defer></script>
 </body>
 </html>

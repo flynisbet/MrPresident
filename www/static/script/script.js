@@ -15,15 +15,17 @@ async function getData() {
             throw new Error(`Response status: ${response.status}`);
         }
         jsonData = await response.json();
+        placeInfo()
     } catch (error) {
         console.error(error.message);
     }
 }
 
+let president = []; 
+
 function placeInfo(){
     // Get the timeline containers class to add containers to once we create them
     let conts = document.querySelector('.timeline-containers');
-
     for (pres in jsonData){
         // Get president info
         let presInfo = jsonData[pres];
@@ -51,6 +53,10 @@ function placeInfo(){
     
         //name
         let presName = document.createTextNode(presInfo['Name']);
+
+       // console.log(presInfo['Name'])
+        president.push(presInfo['Name'])        // add name to the list 
+
         let name = document.createElement('h3');
         name.className = 'title';
         name.appendChild(presName);
@@ -73,7 +79,33 @@ function placeInfo(){
         cont.appendChild(box);
         conts.appendChild(cont);
     }
+
 }
 
-window.addEventListener('DOMContentLoaded', getData);
-window.addEventListener('DOMContentLoaded', placeInfo);
+
+// SearchBar: Get input element and results list
+let search = document.getElementById('search');
+let results = document.getElementById('results');
+
+search.addEventListener('keyup', function(event){
+
+     // Clear results list
+    results.innerHTML = '';
+
+    let searchTerm = event.target.value.toLowerCase();
+
+    president.forEach(function(name){
+        if(name.toLowerCase().indexOf(searchTerm) > -1){
+            let item = document.createElement('li');
+            item.innerHTML = name;
+
+            // onclick if user click on the result
+            item.onclick = function() {
+                scrollToPresident(name); 
+            };
+
+            results.appendChild(item);
+        }
+    })
+});
+
