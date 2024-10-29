@@ -1,10 +1,11 @@
-function toggleMenu(){
-    const menu = document.querySelector('.menu-item');
+function toggleMenu() {
+    const menu = document.querySelector('.hamburger-menu'); 
     const icon = document.querySelector('.hamburger-icon');
 
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
+
 
 let jsonData = null;
 async function getData() {

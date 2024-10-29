@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Our About Page</title>
+    <title>{% block title %}Default Title{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutstyles.css') }}">
+
     
 </head>
 
-<body onload = 'getData()'>
+<body onload= getData()>
     <nav id="desktop-nav">
         <div class='logo'> 
         <a href="#"> Mr.President</a>    
         </div>
         <ul class="nav-menu">
+            
             <li> <a href="/"> Home</a></li>
             <li> <a href="timeline.html"> Profile</a></li>
             <li> <a href="#"> Quiz</a></li>
             <li> <a href="#"> Jump</a></li>
             <li> <a href="/about"> About</a></li>
-
-            <li onclick="showSidebar()">
-                <a href="#">
-                    <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF" alt="icon" class="navbar-icon">
-                </a>
-            </li>
-            
         </ul>
     </nav>
 
@@ -34,26 +30,34 @@
             <a href="#"> Mr.President</a> 
         </div>
 
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Sidebar that slides in -->
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-item">
-                <li> <a href="/" onclick="toggleMenu()"> Home</a></li>
-                <li> <a href="index.html" onclick="toggleMenu()"> Profile</a></li>
-                <li> <a href="#" onclick="toggleMenu()">Quiz</a></li>
-                <li> <a href="#" onclick="toggleMenu()"> Jump</a></li>
-                <li> <a href="/about" onclick="toggleMenu()"> About</a></li>
-            </div>
-        </div> 
+            <ul class="menu-item">
+                <li>
+                    <a onclick = toggleMenu()>
+                        <img src="https://img.icons8.com/?size=100&id=46&format=png&color=000000" alt="Icon from Icons8" style="width: 50px; height: 50px;">
+                    </a>
+                   
+                </li>
+                <li><a href="/" onclick="toggleMenu()">Home</a></li>
+                <li><a href="timeline.html" onclick="toggleMenu()">Profile</a></li>
+                <li><a href="#" onclick="toggleMenu()">Quiz</a></li>
+                <li><a href="#" onclick="toggleMenu()">Jump</a></li>
+                <li><a href="/about" onclick="toggleMenu()">About</a></li>
+            </ul>
+        </div>
     </nav>
 
     {% block content %}{% endblock %}
 
-   <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
+   <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+
 
 </body>
 </html>
