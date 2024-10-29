@@ -9,6 +9,7 @@ cors = CORS(app)
 def presidentData():
     with open('../www/static/json/mrPresident.json', 'r') as file:
         presidents = json.load(file)
+    return jsonify(presidents)
 
 @app.route("/")
 def home(): 

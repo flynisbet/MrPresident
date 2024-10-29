@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutstyles.css') }}">
     
 </head>
 
-<body>
+<body onload = 'getData()'>
     <nav id="desktop-nav">
         <div class='logo'> 
         <a href="#"> Mr.President</a>    
@@ -44,7 +43,7 @@
             </div>
             <div class="menu-item">
                 <li> <a href="/" onclick="toggleMenu()"> Home</a></li>
-                <li> <a href="timeline.html" onclick="toggleMenu()"> Profile</a></li>
+                <li> <a href="index.html" onclick="toggleMenu()"> Profile</a></li>
                 <li> <a href="#" onclick="toggleMenu()">Quiz</a></li>
                 <li> <a href="#" onclick="toggleMenu()"> Jump</a></li>
                 <li> <a href="/about" onclick="toggleMenu()"> About</a></li>
@@ -54,7 +53,7 @@
 
     {% block content %}{% endblock %}
 
-   <script src="../static/script/script.js"></script>
+   <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
 
 </body>
 </html>

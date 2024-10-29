@@ -33,6 +33,11 @@ li, a {
 
 .logo{
     font-size: 2rem;
+    align-items: center;
+}
+
+.logo a{
+    margin-bottom: 30px;
 }
 
 .logo:hover{
@@ -77,10 +82,10 @@ li, a {
 
 /* hamburger nav */
 #hamburger-nav{
-    display: none; 
+    display: flex; 
     justify-content: space-around;
-    padding: 0 20px; 
     align-items: center;
+    padding-top: 20px;
 }
 
 .hamburger-menu{
@@ -160,15 +165,15 @@ li, a {
 #timeline{
     width: 100%;
     min-height: 100vh;
-    padding: 100px 15px;
+    padding: 20px 15px;
 }
 
 .timetine-title{
     font-size: 2.5rem;
     font-weight: 500px;
     text-align: center;
-    padding: 30px 15px;
-    Margin: 30px;
+    padding: 10px 15px;
+    Margin: 10px;
 }
 
 .timeline-containers{
@@ -276,19 +281,26 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
 
 /* search icon */
 .searchBox {
-    margin: 20px;
+    margin: 20px auto;
     height: 50px;
     display: flex;
     justify-content: flex-start;
     cursor: pointer;
     padding: 10px;
-    width: 400px;
+    width: 85%;
     border-radius: 30px;
     align-items: center;
     background-color: #2C2F33; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     position: relative; 
     z-index: 1;
+}
+
+.searchBox a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .searchBox a img {

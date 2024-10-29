@@ -4,7 +4,7 @@
     <div class="searchBox">
         <input type="text" placeholder='Search....' id ='search'>
         <a href="#">
-            <img src="../asset/img/search.png">
+            <img src="../static/img/search.png">
         </a>    
         <ul id='results'>
 
@@ -13,7 +13,7 @@
 
 
     <section id ="timeline">
-        <div class="timetine-title">Presidents Of United States Of America</div>
+        <div class="timetine-title">Presidents of the United States Of America</div>
         <div class="timeline-containers"></div>
     </div>
     </section>
@@ -24,6 +24,6 @@
    
 
     
-   <script src="../static/script/script.js" defer></script>
+    <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
 
    {% endblock %}

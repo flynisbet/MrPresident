@@ -14,7 +14,7 @@ h2{
     font-weight: 300;
     font-size: 30px;
     text-decoration: none;
-    color: #F5F5F5;
+    color:#ffffff;
 }
 
 .menu-item a{
@@ -22,7 +22,6 @@ h2{
     padding:10px;
     text-align: center; 
     font-size: 0.75rem;
-    color: white; 
     text-decoration: none; 
     transition: all 0.5s ease-in-out;
 }
@@ -37,14 +36,14 @@ h2{
 
 #section__about{
     display: flex;
-    margin: 50px;
-    padding: 25px 50px;
+    margin: 20px;
+    padding: 10px 20px;
     align-self: center;
     flex-direction: column;
 }
 
 .containter__author{
-    margin: 50px; 
+    margin: 20px; 
     padding: 50px; 
 }
 
@@ -58,8 +57,7 @@ h2{
 .about__author, .about__purpose{
     display: flex; 
     flex-direction: column;
-    color: white;
-    margin: 20px;
+    margin: 10px;
 }
 
 .author__photo{
@@ -104,6 +102,9 @@ p {
 }
 
 .theme{
+    display: flex inline-block;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -153,7 +154,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-body.light-mode {
-    --background-color: #efddc3;
-    --text-color: rgb(64, 56, 110);
+* .light-mode {
+    background-color: #fdefdd;
+    color:brown;
 }

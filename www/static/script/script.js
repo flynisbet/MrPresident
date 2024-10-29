@@ -22,7 +22,6 @@ async function getData() {
 }
 
 let president = []; 
-
 function placeInfo(){
     // Get the timeline containers class to add containers to once we create them
     let conts = document.querySelector('.timeline-containers');
@@ -140,18 +139,18 @@ function scrollToPresident(name) {
     }
 }
 
-
-
-
-// Function to toggle the theme
-function toggleTheme(isDarkMode) {
-    let light = document.getElementById('theme-toggle').value;
-    let body = document.body;
-    if (light) {
-        body.classList.add('light-mode');
+// Function to toggle the theme, needs work to apply to all pages and save state
+function toggleTheme() {
+    let light = document.getElementById('theme-toggle');
+    if (light.checked) {
+        document.querySelectorAll("*").forEach(element => {
+            element.classList.add("light-mode");
+        });
     } 
     else {
-        body.classList.remove('light-mode');
+        document.querySelectorAll("*").forEach(element => {
+            element.classList.remove("light-mode");
+        });
     }
 }
 

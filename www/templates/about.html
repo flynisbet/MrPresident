@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/aboutstyles.css') }}">
 <section id="section__about">
     <div class="about__purpose">
         <img src="{{ url_for('static', filename='img/whiteHouse.avif') }}" alt="psdf" class="whiteHouse">
@@ -90,4 +91,7 @@
             </div>        
     </div>
    </section>
+
+   <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
+
    {% endblock %}
