@@ -1,54 +1,10 @@
-<!DOCTYPE html>
+{% extends 'layout.html' %}
 
-<head>
-    <title>Our About Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "../static/css/styles.css">
-    <link rel = "stylesheet" href = "../static/css/aboutstyles.css">
-    
-    <link rel="stylesheet" href="../static/css/mediaqueries.css">
-    
-</head>
-
-<body>
-    <nav id="desktop-nav">
-        <div class='logo'> 
-        <a href="#"> Mr.President</a>    
-        </div>
-        <ul class="nav-menu">
-            <li> <a href="index.html"> Home</a></li>
-            <li> <a href="timeline.html"> Profile</a></li>
-            <li> <a href="#"> Quiz</a></li>
-            <li> <a href="#"> Jump</a></li>
-            <li> <a href="about.html"> About</a></li>
-        </ul>
-    </nav>
-
-    <nav id="hamburger-nav">
-        <div class="logo">
-            <a href="#"> Mr.President</a> 
-        </div>
-
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-item">
-                <li> <a href="index.html" onclick="toggleMenu()"> Home</a></li>
-                <li> <a href="timeline.html" onclick="toggleMenu()"> Profile</a></li>
-                <li> <a href="#" onclick="toggleMenu()">Quiz</a></li>
-                <li> <a href="#" onclick="toggleMenu()"> Jump</a></li>
-                <li> <a href="about.html" onclick="toggleMenu()"> About</a></li>
-            </div>
-        </div> 
-    </nav>
-
-   <section id="section__about">
+{% block content %}
+<section id="section__about">
     <div class="about__purpose">
-        <img src="../asset/img/whiteHouse.avif", class="whiteHouse">
+        <img src="{{ url_for('static', filename='img/whiteHouse.avif') }}" alt="psdf" class="whiteHouse">
+                     
         <h1>Purpose</h1>
         <p>
             Mr. President is an interactive timeline of the United States presidents.
@@ -67,7 +23,10 @@
         <div class="containter__author">
             <div class="author">
                 <div class="author__photo">
-                    <img src = "../asset/img/mengsrunpf.jpg">
+                    
+                    
+                    <img src="{{ url_for('static', filename='img/mengsrunpf.jpg') }}" alt="pf">
+                     
                 </div>
                 <div class="author__text">
                     <h2> Mengsrun Nit</h2>
@@ -75,15 +34,17 @@
                         I like watching soccer game, and I am a Bacelona Fan. I also like to cook and eat. 
                     </p>
                     <div class = 'contacts_author'>
-                        <a href="https://github.com/MengsrunNit"> <div class = "tiny_picture"><img src = "../asset/img/githubLogo.png"></div></a>
-                        <a href="https://www.linkedin.com/in/mengsrunnit/"> <div class = "tiny_picture"><img src = "../asset/img/linkedin.png"></div></a>
+                        <a href="https://github.com/MengsrunNit"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/githubLogo.png') }}" alt="GitHub Logo"></div></a>
+                        <a href="https://www.linkedin.com/in/mengsrunnit/"><div class="tiny_picture"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn Logo"></div></a>
+
                     </div>
                 </div>
             </div>
 
             <div class="author">
                 <div class="author__photo">
-                    <img src = "../asset/img/olivia.jpeg">
+                    <img src="{{ url_for('static', filename='img/olivia.jpeg') }}" alt="pf">
+                     
                 </div>
                 <div class="author__text">
                     <h2> Olivia Longsworth</h2>
@@ -91,8 +52,8 @@
                         Spootus Mootis and gardening.
                     </p>
                     <div class = 'contacts_author'>
-                        <a href="https://github.com/olongsworth"> <div class = "tiny_picture"><img src = "../asset/img/githubLogo.png"></div></a>
-                        <a href="https://www.linkedin.com/in/olivia-longsworth/"> <div class = "tiny_picture"><img src = "../asset/img/linkedin.png"></div></a>
+                        <a href="https://github.com/olongsworth"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/githubLogo.png') }}" alt="GitHub Logo"></div></a>
+                        <a href="https://www.linkedin.com/in/olivia-longsworth/"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn Logo"></div></a>
                     </div>
                 </div>
                 
@@ -100,7 +61,9 @@
 
             <div class="author">
                 <div class="author__photo">
-                    <img src = "../asset/img/flynn.jpeg">
+                    <img src="{{ url_for('static', filename='img/flynn.jpeg') }}" alt="pf">
+                     
+                    
                 </div>
                 <div class="author__text">
                     <h2> Flynn Nisbet</h2>
@@ -112,8 +75,8 @@
                         and go to Bulgogi Korean Grill frequently. 
                     </p>
                     <div class = 'contacts_author'>
-                        <a href="https://github.com/flynisbet"> <div class = "tiny_picture"><img src = "../asset/img/githubLogo.png"></div></a>
-                        <a href="https://www.linkedin.com/in/flynn-nisbet/"> <div class = "tiny_picture"><img src = "../asset/img/linkedin.png"></div></a>
+                        <a href="https://github.com/flynisbet"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/githubLogo.png') }}" alt="GitHub Logo"></div></a>
+                        <a href="https://www.linkedin.com/in/flynn-nisbet/"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn Logo"></div></a>
                     </div>
                 </div>
             </div>
@@ -127,8 +90,4 @@
             </div>        
     </div>
    </section>
-
-   <script src="../static/script/script.js"></script>
-
-</body>
-</html>
+   {% endblock %}

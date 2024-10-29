@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="searchBox">
+        <input type="text" placeholder='Search....' id ='search'>
+        <a href="#">
+            <img src="../asset/img/search.png">
+        </a>    
+        <ul id='results'>
+
+        </ul>
+    </div>
+
+
+    <section id ="timeline">
+        <div class="timetine-title">Presidents Of United States Of America</div>
+        <div class="timeline-containers"></div>
+    </div>
+    </section>
+
+    <div id="flyIcon" onclick ='scrollUp()' >
+        <img src="https://img.icons8.com/?size=100&id=166&format=png&color=000000" alt="flyicon"  />
+    </div>
+   
+
+    
+   <script src="../static/script/script.js" defer></script>
+
+   {% endblock %}
