@@ -19,8 +19,8 @@ def home():
 def about(): 
     return render_template('about.html', page_title = "About_Page")
 
-
-
 @app.route("/game")
 def quizGame():
     return render_template("quiz.html")
+
+
