@@ -1,4 +1,5 @@
 {% extends 'layout.html' %}
+{% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
 
 {% block title %}{{page_title}}{% endblock %}
 
@@ -26,6 +27,6 @@
    
 
     
-    <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
+    
 
    {% endblock %}
