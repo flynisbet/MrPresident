@@ -54,17 +54,16 @@ function placeInfo(){
         let picture = document.createElement('img');
         picture.src = presInfo['IMG filepath'];
         box.appendChild(picture);
-    
-        //name
-        let presName = document.createTextNode(presInfo['Name']);
 
        // console.log(presInfo['Name'])
-        president.push(presInfo['Name'])        // add name to the list 
-
-        let name = document.createElement('h3');
-        name.className = 'title';
-        name.appendChild(presName);
-        box.appendChild(name);
+       let name = document.createElement('h3');
+       let presName = document.createTextNode(presInfo['Name']);
+       name.className = 'title';
+       name.appendChild(presName);
+       let name_link = document.createElement('a');
+       name_link.appendChild(name);
+       name_link.href = `/president/${presInfo['No']}`;
+       box.appendChild(name_link);
 
         //years
         let presYears = document.createTextNode(presInfo['Term Years']);

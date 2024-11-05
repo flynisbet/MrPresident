@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, abort
 from flask_cors import CORS
 import json
 
@@ -22,5 +22,19 @@ def about():
 @app.route("/game")
 def quizGame():
     return render_template("quiz.html")
+
+@app.route('/president/<int:president_number>')
+def president_profile(president_number):
+    with open('../www/static/json/mrPresident.json', 'r') as file:
+        presidents = json.load(file)
+    president = presidents.get(str(president_number))
+    if not president:
+        abort(404)
+    return render_template('pres_profile.html', president=president)
+
+@app.route("/")
+def Hi():
+    return render_template("quiz.html")
+
 
 

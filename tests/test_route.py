@@ -37,7 +37,7 @@ def test_home(client):
     assert b"Home_President" in response.data  
 
 def test_presidentData(client):
-    # Test the /pres route to ensure it returns JSON data
+ 
     response = client.get("/pres")
      #assert the response and data types
     assert response.status_code == 200
@@ -75,6 +75,30 @@ def test_presidentData(client):
     assert fortyfour_president["Name"] == " Barack Obama"
     assert fortyfour_president["Vice President"] == "Joe Biden"
     assert fortyfour_president["Party"] == "Democratic"
+
+
+def test_profile(client):
+    
+    for i in range(1, 47):
+        response = client.get(f'/president/{i}')
+        assert response.status_code == 200
+    
+    response = client.get('/president/1')  # Replace with an actual president number
+    data = response.data.decode('utf-8')
+    assert "George Washington" in data
+
+    response = client.get('/president/46')  # Replace with an actual president number
+    data = response.data.decode('utf-8')
+    assert " Joe Biden" in data
+    
+    
+  
+    
+    
+    
+    
+
+
     
 
     

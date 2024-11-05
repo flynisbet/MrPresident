@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
+{% block title %}{{page_title}}{% endblock %}
+{% block content %}
+
+<div class="pres-container">
+    <div class = 'pres-info'>
+    <img src="{{ president['IMG filepath'] }}" alt="{{ president['Name'] }}" class="pres-image">
+        <div class="pres-name">{{ president["Name"] }}</div>
+        <div class="pres-details">
+            <p>President Number: {{ president["No"] }}</p>
+            <p>Years Served:{{ president["Term Years"] }}</p>
+            <p>Vice President: {{ president["Vice President"] }}</p>
+            <p>First Lady: {{ president["First Lady"] }}</p>
+            <p>Party: {{ president["Party"] }}</p>
+        </div>
+    </div>
+    <div class = 'pres-description'>
+        <p>Description: {{ president["Description"] }}</p>
+    </div>
+</div>
+
+{% endblock %}

@@ -411,3 +411,38 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
 #flyIcon:hover img {
     filter: invert(0.5);
 }
+
+.pres-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pres-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.pres-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.pres-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pres-details p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+.pres-description {
+    margin-top: 20px;
+}
+.pres-description p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}

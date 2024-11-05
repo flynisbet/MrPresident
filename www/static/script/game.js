@@ -3,7 +3,7 @@ const questions = [
         question: "Who is the first president of the America?", 
         answers: [
             { text: "Obama" , correct : false}, 
-            { text: "Geogrge Wahsinton" , correct : true}, 
+            { text: "George Washington" , correct : true}, 
             { text: "Trump" , correct : false}, 
             { text: "Biden" , correct : false}, 
         ]
@@ -12,7 +12,7 @@ const questions = [
         question: "Who is the Last president of the America?", 
         answers: [
             { text: "Obama" , correct : false}, 
-            { text: "Geogrge Wahsinton" , correct : false}, 
+            { text: "George Washington" , correct : false}, 
             { text: "Trump" , correct : false}, 
             { text: "Biden" , correct : true}, 
         ]
