@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
 
-{% block title %}{{page_title}}{% endblock %}
+{% block title %} About {{ president['Name'] }}{% endblock %}
 
 {% block content %}
 
@@ -18,7 +18,7 @@
         </div>
     </div>  
     <div class = 'pres-description'>
-        <p>Description: {{ president["Description"] }}</p>
+        <p>{{ president["Description"] }}</p>
     </div>
 </div>
 

@@ -27,14 +27,14 @@ def test_about(client):
     
     #assert the response and data passed 
     assert response.status_code == 200
-    assert b"About_Page" in response.data  
+    assert b"About Mr. President" in response.data  
 
 def test_home(client):
     response = client.get("/home")
 
     assert response.status_code == 200
      #assert the response and data passed 
-    assert b"Home_President" in response.data  
+    assert b"Presidential Timeline" in response.data  
 
 def test_presidentData(client):
  

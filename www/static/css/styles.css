@@ -190,8 +190,7 @@ body {
     font-size: 2.5rem;
     font-weight: 500px;
     text-align: center;
-    padding: 30px 15px;
-    Margin: 30px;
+    Margin: 0px 10px;
 }
 
 .timeline-containers{
@@ -252,10 +251,12 @@ body {
     position: relative;
 }
 .textbox h3{
-    font-size: 20px;
-    margin: 0 0 10px;
+    font-size: 30px;
+    margin: 10px 0px;
     text-transform: capitalize;
     font-weight: 500px;
+    color: #d7c593;
+    text-decoration: underline;
 }
 .textbox{
     font-size: 16px;
@@ -424,6 +425,8 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
 
 .pres-container h2{
     margin-bottom: 20px;
+    color:#d7c593;
+    text-decoration: underline;
 }
 
 .pres-info {

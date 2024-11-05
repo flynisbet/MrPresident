@@ -1,29 +1,29 @@
 const questions = [
     {
-        question: "Who is the first president of the America?", 
+        question: "Who was the first president of the United States?", 
         answers: [
-            { text: "Obama" , correct : false}, 
+            { text: "Barack Obama" , correct : false}, 
             { text: "George Washington" , correct : true}, 
-            { text: "Trump" , correct : false}, 
-            { text: "Biden" , correct : false}, 
+            { text: "Donald Trump" , correct : false}, 
+            { text: "Joe Biden" , correct : false}, 
         ]
     }, 
     {
-        question: "Who is the Last president of the America?", 
+        question: "Who is the most recent president of the United States?", 
         answers: [
-            { text: "Obama" , correct : false}, 
+            { text: "Barack Obama" , correct : false}, 
             { text: "George Washington" , correct : false}, 
-            { text: "Trump" , correct : false}, 
-            { text: "Biden" , correct : true}, 
+            { text: "Donald Trump" , correct : false}, 
+            { text: "Joe Biden" , correct : true}, 
         ]
     }, 
     {
         question: "Where is Furman University?", 
         answers: [
-            { text: "SC" , correct : true}, 
-            { text: "NC" , correct : false}, 
-            { text: "Geogrgia" , correct : false}, 
-            { text: "NY" , correct : false}, 
+            { text: "South Carolina" , correct : true}, 
+            { text: "North Carolina" , correct : false}, 
+            { text: "Georgia" , correct : false}, 
+            { text: "New York" , correct : false}, 
         ]
     }, 
 ]; 
