@@ -23,6 +23,11 @@ def about():
 def quizGame():
     return render_template("quiz.html")
 
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
+
+
 @app.route('/president/<int:president_number>')
 def president_profile(president_number):
     with open('../www/static/json/mrPresident.json', 'r') as file:
