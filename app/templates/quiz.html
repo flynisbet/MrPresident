@@ -1,2 +1,24 @@
 {% extends 'layout.html' %}
 
+{% block  style %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}"> 
+
+{%endblock%}
+{% block content %}
+  
+<div class="app">
+    <h1> President Quiz</h1>
+    <div class="quiz">
+        <h2 id="question"> Question Goes here</h2>
+        <div id="answer-buttons">
+           
+        </div>
+        <button id="next-btn">Next</button>
+    
+    </div>
+</div>
+{% endblock %}
+
+{% block script%}
+<script src="{{ url_for('static', filename='script/game.js') }}"></script>
+{% endblock %}
