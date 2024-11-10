@@ -26,7 +26,7 @@
             <li> <a href="/home"> Home</a></li>
             <li> <a href="/profile"> Profile</a></li>
             <li> <a href="/game"> Game</a></li>
-            <li> <a href="#"> Jump</a></li>
+            <li> <a href="#"> Rank</a></li>
             <li> <a href="/about"> About</a></li>
         </ul>
     </nav>
@@ -54,7 +54,7 @@
                 <li><a href="/home" onclick="toggleMenu()">Home</a></li>
                 <li><a href="/profile" onclick="toggleMenu()">Profile</a></li>
                 <li><a href="/game" onclick="toggleMenu()">Game</a></li>
-                <li><a href="#" onclick="toggleMenu()">Jump</a></li>
+                <li><a href="#" onclick="toggleMenu()">Rank</a></li>
                 <li><a href="/about" onclick="toggleMenu()">About</a></li>
             </ul>
         </div>
@@ -64,6 +64,22 @@
     {% block script%}{% endblock %}
    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
 
+    <footer>
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email Flynn: <a href="mailto:nisbco3@furman.edu">nisbco3@furman.edu</a></p>
+            <p>Email Mengsrun: <a href="mailto:nitme0@furman.edu">nitme0@furman.edu</a></p>
+            <p>Email Olivia: <a href="mailto:longol4@furman.edu">longol4@furman.edu</a></p>
+        </div>
+
+        <div class="footer-copyright">
+            <p>Phone: +1.864.294.2000</p>
+            <p>Address: 3300 Poinsett Hwy, Greenville, SC, 29613</p>
+            <p>&copy; 2024 Mr. President. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
 
 </body>
 </html>

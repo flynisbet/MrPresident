@@ -58,6 +58,7 @@ function placeInfo(){
        // console.log(presInfo['Name'])
        let name = document.createElement('h3');
        let presName = document.createTextNode(presInfo['Name']);
+       president.push(presInfo['Name']);
        name.className = 'title';
        name.appendChild(presName);
        let name_link = document.createElement('a');
