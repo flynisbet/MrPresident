@@ -11,21 +11,75 @@ const questions = [
     {
         question: "Who is the most recent president of the United States?", 
         answers: [
-            { text: "Barack Obama" , correct : false}, 
+            { text: "Ulysses S. Grant" , correct : false}, 
             { text: "George Washington" , correct : false}, 
             { text: "Donald Trump" , correct : false}, 
             { text: "Joe Biden" , correct : true}, 
         ]
     }, 
     {
-        question: "Where is Furman University?", 
+        question: "Which president issued the Emancipation Proclamation?", 
         answers: [
-            { text: "South Carolina" , correct : true}, 
-            { text: "North Carolina" , correct : false}, 
-            { text: "Georgia" , correct : false}, 
-            { text: "New York" , correct : false}, 
+            { text: "Abraham Lincoln" , correct : true}, 
+            { text: "Franklin D. Roosevelt" , correct : false}, 
+            { text: "Abraham Lincoln" , correct : false}, 
+            { text: "Theodore Roosevelt" , correct : false}, 
         ]
     }, 
+     {
+        question: "Who was the only U.S. president to serve more than two terms?", 
+        answers: [
+            { text: "Woodrow Wilson" , correct : false}, 
+            { text: "Franklin D. Roosevelt" , correct : true}, 
+            { text: "Dwight D. Eisenhower" , correct : false}, 
+            { text: "Harry S. Truman" , correct : false}, 
+        ]
+    }, 
+     {
+        question: "Which president famously said, \"The only thing we have to fear is fear itself\"?", 
+        answers: [
+            { text: "John F. Kennedy" , correct : false}, 
+            { text: "Franklin D. Roosevelt" , correct : true}, 
+            { text: "Lyndon B. Johnson" , correct : false}, 
+            { text: "Ronald Reagan" , correct : false}, 
+        ]
+    }, 
+         {
+        question: "Which president is known for the Louisiana Purchase?"", 
+        answers: [
+            { text: "James Madison" , correct : false}, 
+            { text: "Thomas Jefferson" , correct : true}, 
+            { text: "John Quincy Adams" , correct : false}, 
+            { text: "James Monroe" , correct : false}, 
+        ]
+    }
+         {
+        question: "Who was the president during the Cuban Missile Crisis?", 
+        answers: [
+            { text: "John F. Kennedy" , correct : true}, 
+            { text: "Richard Nixon" , correct : false}, 
+            { text: "Lyndon B. Johnson" , correct : false}, 
+            { text: "Dwight D. Eisenhower" , correct : false}, 
+        ]
+    }
+         {
+        question: "Which president is known for the \"New Deal\"?", 
+        answers: [
+            { text: "Martin Van Buren" , correct : false}, 
+            { text: "Franklin D. Roosevelt" , correct : true}, 
+            { text: "Bill Clinton , correct : false}, 
+            { text: "Dwight D. Eisenhower" , correct : false}, 
+        ]
+    }
+         {
+        question: "Who was the first president to resign from office?", 
+        answers: [
+            { text: "John F. Kennedy" , correct : false}, 
+            { text: "Richard Nixon" , correct : true}, 
+            { text: "Donald J. Trump" , correct : false}, 
+            { text: "George Washington" , correct : false}, 
+        ]
+    }
 ]; 
 
 const questionElement = document.getElementById("question"); 
