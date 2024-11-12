@@ -16,7 +16,7 @@
     --primary-text: brown; 
     --ComponentBase-color: #1E1E2F; 
     --humbar-color: #d7c593;  
-    --search-box:red;
+    --search-box:#242448; 
     --textbox-color: #E0E0E0;
     --contrast-back: #1E1E2F;
 }
@@ -508,9 +508,9 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     display: block; 
 }
 
-.lightMode #switch-mode svg:first-child {
+.lightMode svg:first-child {
     display: block; 
 }
-.lightMode #switch-mode svg:last-child {
+.lightMode svg:last-child {
     display: none; 
 }
