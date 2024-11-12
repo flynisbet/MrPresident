@@ -11,6 +11,12 @@ def presidentData():
         presidents = json.load(file)
     return jsonify(presidents)
 
+@app.route("/preQuiz")
+def presidentQuiz():
+    with open('../www/static/json/mrPresidentQuiz.json', 'r') as file:
+        presidentQuiz = json.load(file)
+    return jsonify(presidentQuiz)
+
 @app.route("/home")
 def home(): 
     return render_template('index.html', page_title="Home_President")

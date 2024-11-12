@@ -1,82 +1,82 @@
-{
-    "Who was the first President of the United States?": {
-        "Question": "Who was the first President of the United States?",
-        "A": "Thomas Jefferson",
-        "B": "George Washington",
-        "C": "Abraham Lincoln",
-        "D": "John Adams",
-        "Answer": "B"
+[
+    {
+        "question": "Who was the first president of the United States?", 
+        "answers": [
+            { "text": "Barack Obama", "correct": false }, 
+            { "text": "George Washington", "correct": true }, 
+            { "text": "Donald Trump", "correct": false }, 
+            { "text": "Joe Biden", "correct": false }
+        ]
+    }, 
+    {
+        "question": "Who is the most recent president of the United States?", 
+        "answers": [
+            { "text": "Ulysses S. Grant", "correct": false }, 
+            { "text": "George Washington", "correct": false }, 
+            { "text": "Donald Trump", "correct": false }, 
+            { "text": "Joe Biden", "correct": true }
+        ]
+    }, 
+    {
+        "question": "Which president issued the Emancipation Proclamation?", 
+        "answers": [
+            { "text": "Abraham Lincoln", "correct": true }, 
+            { "text": "Franklin D. Roosevelt", "correct": false }, 
+            { "text": "Theodore Roosevelt", "correct": false }
+        ]
+    }, 
+    {
+        "question": "Who was the only U.S. president to serve more than two terms?", 
+        "answers": [
+            { "text": "Woodrow Wilson", "correct": false }, 
+            { "text": "Franklin D. Roosevelt", "correct": true }, 
+            { "text": "Dwight D. Eisenhower", "correct": false }, 
+            { "text": "Harry S. Truman", "correct": false }
+        ]
+    }, 
+    {
+        "question": "Which president famously said, 'The only thing we have to fear is fear itself'?", 
+        "answers": [
+            { "text": "John F. Kennedy", "correct": false }, 
+            { "text": "Franklin D. Roosevelt", "correct": true }, 
+            { "text": "Lyndon B. Johnson", "correct": false }, 
+            { "text": "Ronald Reagan", "correct": false }
+        ]
+    }, 
+    {
+        "question": "Which president is known for the Louisiana Purchase?", 
+        "answers": [
+            { "text": "James Madison", "correct": false }, 
+            { "text": "Thomas Jefferson", "correct": true }, 
+            { "text": "John Quincy Adams", "correct": false }, 
+            { "text": "James Monroe", "correct": false }
+        ]
     },
-    "Which president issued the Emancipation Proclamation?": {
-        "Question": "Which president issued the Emancipation Proclamation?",
-        "A": "Ulysses S. Grant",
-        "B": "Franklin D. Roosevelt",
-        "C": "Abraham Lincoln",
-        "D": "Theodore Roosevelt",
-        "Answer": "C"
+    {
+        "question": "Who was the president during the Cuban Missile Crisis?", 
+        "answers": [
+            { "text": "John F. Kennedy", "correct": true }, 
+            { "text": "Richard Nixon", "correct": false }, 
+            { "text": "Lyndon B. Johnson", "correct": false }, 
+            { "text": "Dwight D. Eisenhower", "correct": false }
+        ]
     },
-    "Who was the only U.S. president to serve more than two terms?": {
-        "Question": "Who was the only U.S. president to serve more than two terms?",
-        "A": "Woodrow Wilson",
-        "B": "Franklin D. Roosevelt",
-        "C": "Dwight D. Eisenhower",
-        "D": "Harry S. Truman",
-        "Answer": "B"
+    {
+        "question": "Which president is known for the New Deal?", 
+        "answers": [
+            { "text": "Martin Van Buren", "correct": false }, 
+            { "text": "Franklin D. Roosevelt", "correct": true }, 
+            { "text": "Bill Clinton", "correct": false }, 
+            { "text": "Dwight D. Eisenhower", "correct": false }
+        ]
     },
-    "Which president famously said, \"The only thing we have to fear is fear itself\"?": {
-        "Question": "Which president famously said, \"The only thing we have to fear is fear itself\"?",
-        "A": "John F. Kennedy",
-        "B": "Franklin D. Roosevelt",
-        "C": "Lyndon B. Johnson",
-        "D": "Ronald Reagan",
-        "Answer": "B"
-    },
-    "Who was president during the Great Depression?": {
-        "Question": "Who was president during the Great Depression?",
-        "A": "Herbert Hoover",
-        "B": "Calvin Coolidge",
-        "C": "Franklin D. Roosevelt",
-        "D": "Harry S. Truman",
-        "Answer": "C"
-    },
-    "Which president is known for the Louisiana Purchase?": {
-        "Question": "Which president is known for the Louisiana Purchase?",
-        "A": "James Madison",
-        "B": "Thomas Jefferson",
-        "C": "John Quincy Adams",
-        "D": "James Monroe",
-        "Answer": "B"
-    },
-    "Who was the president during the Cuban Missile Crisis?": {
-        "Question": "Who was the president during the Cuban Missile Crisis?",
-        "A": "Richard Nixon",
-        "B": "John F. Kennedy",
-        "C": "Lyndon B. Johnson",
-        "D": "Dwight D. Eisenhower",
-        "Answer": "B"
-    },
-    "Which president is known for the \"New Deal\"?": {
-        "Question": "Which president is known for the \"New Deal\"?",
-        "A": "Herbert Hoover",
-        "B": "Franklin D. Roosevelt",
-        "C": "Woodrow Wilson",
-        "D": "Jimmy Carter",
-        "Answer": "B"
-    },
-    "Who was the first president to resign from office?": {
-        "Question": "Who was the first president to resign from office?",
-        "A": "Richard Nixon",
-        "B": "Bill Clinton",
-        "C": "John F. Kennedy",
-        "D": "Lyndon B. Johnson",
-        "Answer": "A"
-    },
-    "Which president issued the Monroe Doctrine?": {
-        "Question": "Which president issued the Monroe Doctrine?",
-        "A": "Andrew Jackson",
-        "B": "James Monroe",
-        "C": "Martin Van Buren",
-        "D": "John Tyler",
-        "Answer": "B"
+    {
+        "question": "Who was the first president to resign from office?", 
+        "answers": [
+            { "text": "John F. Kennedy", "correct": false }, 
+            { "text": "Richard Nixon", "correct": true }, 
+            { "text": "Donald J. Trump", "correct": false }, 
+            { "text": "George Washington", "correct": false }
+        ]
     }
-}
+]
