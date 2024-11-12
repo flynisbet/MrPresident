@@ -504,5 +504,16 @@
         "Birth-Death ": "November 20, 1942",
         "IMG filepath": "../static/img/46_Biden.jpeg",
         "Description": "Biden's presidency has focused on uniting the nation post-COVID-19 pandemic, implementing economic stimulus measures, and addressing climate change. He has emphasized social justice, infrastructure development, and rebuilding alliances abroad. His administration faces ongoing challenges, including political polarization and economic recovery efforts."
-    }
+    },
+    "47": {
+        "No": "47",
+        "Name": "Donald Trump",
+        "Term Years": "2025\u20132029",
+        "Vice President": "J.D. Vance",
+        "First Lady": "Melania Trump",
+        "Party": "Republican",
+        "Birth-Death ": "June 14, 1946",
+        "IMG filepath": "../static/img/45_Trump.jpeg",
+        "Description": "Trump recently won the United States Presidential Election against Democratic nominee and current vice president Kamala Harris. He won with 312 electoral college votes and also won the popular vote. His campagin focused on the economy, foreign policiy, and immigration."
+}
 }
