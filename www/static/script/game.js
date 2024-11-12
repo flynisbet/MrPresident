@@ -85,6 +85,7 @@ function handlenextButton(){
         showQuestion()
     }else{
         showScore();
+        nextButton.innerHTML = "Play Again"; 
     }
 }
 

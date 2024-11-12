@@ -13,8 +13,8 @@
         "answers": [
             { "text": "Ulysses S. Grant", "correct": false }, 
             { "text": "George Washington", "correct": false }, 
-            { "text": "Donald Trump", "correct": false }, 
-            { "text": "Joe Biden", "correct": true }
+            { "text": "Donald Trump", "correct": true }, 
+            { "text": "Joe Biden", "correct": false }
         ]
     }, 
     {
@@ -22,7 +22,8 @@
         "answers": [
             { "text": "Abraham Lincoln", "correct": true }, 
             { "text": "Franklin D. Roosevelt", "correct": false }, 
-            { "text": "Theodore Roosevelt", "correct": false }
+            { "text": "Theodore Roosevelt", "correct": false }, 
+            { "text": "Joe Biden", "correct": false }
         ]
     }, 
     {

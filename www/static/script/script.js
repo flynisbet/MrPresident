@@ -8,7 +8,7 @@ function toggleMenu(){
 
 
 async function getData() {
-    const url = "http://127.0.0.1/pres";
+    const url = "http://127.0.0.1:81/pres";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -21,7 +21,7 @@ async function getData() {
     }
 }
 
-let president = []; 
+let presidents = []; 
 function placeInfo(){
     // Get the timeline containers class to add containers to once we create them
     let conts = document.querySelector('.timeline-containers');
@@ -56,6 +56,7 @@ function placeInfo(){
         box.appendChild(picture);
 
        // console.log(presInfo['Name'])
+       presidents.push(presInfo['Name'])
        let name = document.createElement('h3');
        let presName = document.createTextNode(presInfo['Name']);
        name.className = 'title';
@@ -100,7 +101,7 @@ search.addEventListener('keyup', function(event){
 
     let searchTerm = event.target.value.toLowerCase();
 
-    president.forEach(function(name){
+    presidents.forEach(function(name){
         if(name.toLowerCase().indexOf(searchTerm) > -1){
             let item = document.createElement('li');
             item.innerHTML = name;
