@@ -19,15 +19,20 @@ def presidentQuiz():
 
 @app.route("/home")
 def home(): 
-    return render_template('index.html', page_title="Home_President")
+    return render_template("index.html")
+
+
+@app.route("/timeline")
+def timeline(): 
+    return render_template('timelines.html', page_title="Home_President")
 
 @app.route("/about")
 def about(): 
     return render_template('about.html', page_title = "About_Page")
 
-@app.route("/game")
+@app.route("/game/1")
 def quizGame():
-    return render_template("quiz.html")
+    return render_template("game/quiz_game.html")
 
 @app.route("/profile")
 def profile():
@@ -43,9 +48,13 @@ def president_profile(president_number):
         abort(404)
     return render_template('pres_profile.html', president=president)
 
-@app.route("/")
+@app.route("/game")
 def Hi():
-    return render_template("quiz.html")
+    return render_template("game/game.html")
+
+@app.route("/game/2")
+def game2():
+    return render_template("game/guess_game.html")
 
 
 
