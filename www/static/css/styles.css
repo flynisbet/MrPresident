@@ -534,17 +534,19 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
 }
 
 .footer-container {
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    max-width: 1200px;
+    justify-content:space-between;
     margin: 0 auto;
     gap: 20px; 
+    border-top: 1px solid white;
+   
 }
 
 .footer-contact, .footer-copyright {
+   
     flex: 1; 
-    text-align: left; 
+    text-align: center; 
     padding: 10px;
 }
 
@@ -573,3 +575,9 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     font-size: 0.8rem;
     margin: 5px 0;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
