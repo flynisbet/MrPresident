@@ -6,7 +6,6 @@ function toggleMenu(){
     icon.classList.toggle('open');
 }
 
-
 async function getData() {
     const url = "http://127.0.0.1:81/pres";
     try {
