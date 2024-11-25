@@ -71,13 +71,8 @@ inputBox.addEventListener("keydown", function(event){
         console.log("User press Enter", enterValue);
         for (let i = 0; i < store.length; i++) {
             mydata = jsonData3[store[i]];
-            let fullname = mydata['Name']
-            let  name = fullname.split(" ")
-            let firstname = name[0]
-            let lastname = name[1]
-            console.log(lastname)
-    
-            if(mydata['Name'] === enterValue || lastname === enterValue || firstname === enterValue){
+            console.log(mydata['Name'])
+            if(mydata['Name'] === enterValue){
                 let mypic = document.getElementsByClassName(store[i]);
                 for (let element of mypic) {
                     element.style.setProperty('border', '15px solid green', 'important');

@@ -57,7 +57,4 @@ def game2():
     return render_template("game/guess_game.html")
 
 
-@app.route("/")
-def homepage(): 
-    return render_template("index.html")
 
