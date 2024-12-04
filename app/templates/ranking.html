@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %}
+
+<h1>{{ page_title }}</h1>
+<table border="1" class="presidentList">
+    <thead>
+        <tr>
+            <th>President ID</th>
+            <th>Name</th>
+          
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for president in presidents %}
+            <tr>
+                <td>{{ president['presidentID'] }}</td>
+                <td>{{ president['presidentName'] }}</td>
+                <td>{{ president['Score'] | default('No Score', true) }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">No presidents found</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

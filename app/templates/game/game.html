@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %} About Mr. President {% endblock %}
+{% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
+{% block  style %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/game2.css') }}"> 
+
+{%endblock%}
+{% block content %}
+
+<section id ="quiz2">
+    <h1>Please select the game</h1>
+    <div class= "games-container ">
+        <div class= "quiz-game"> <a href="/game/1"> Quiz Game</a> </div>
+        <div class= "guess-game"> <a href="/game/2"> Guess Game</a> </div>
+
+    </div>
+    
+    
+</section>
+
+
+
+{% endblock %}
+
+   {% block script%}
+   <script src="{{ url_for('static', filename='script/mygame.js') }}"></script>
+   {% endblock %}
+   

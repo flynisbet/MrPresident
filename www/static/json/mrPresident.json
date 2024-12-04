@@ -12,7 +12,7 @@
     },
     "2": {
         "No": "2",
-        "Name": " John Adams",
+        "Name": "John Adams",
         "Term Years": "1797\u20131801",
         "Vice President": "Thomas Jefferson",
         "First Lady": "Abigail Adams",
@@ -23,7 +23,7 @@
     },
     "3": {
         "No": "3",
-        "Name": " Thomas Jefferson",
+        "Name": "Thomas Jefferson",
         "Term Years": "1801\u20131809",
         "Vice President": "Aaron Burr, George Clinton",
         "First Lady": "Martha Jefferson(daughter)",
@@ -34,7 +34,7 @@
     },
     "4": {
         "No": "4",
-        "Name": " James Madison",
+        "Name": "James Madison",
         "Term Years": "1809\u20131817",
         "Vice President": "George Clinton, Elbridge Gerry",
         "First Lady": "Dolley Madison",
@@ -45,7 +45,7 @@
     },
     "5": {
         "No": "5",
-        "Name": " James Monroe",
+        "Name": "James Monroe",
         "Term Years": "1817\u20131825",
         "Vice President": "Daniel D. Tompkins",
         "First Lady": "Elizabeth Monroe",
@@ -56,7 +56,7 @@
     },
     "6": {
         "No": "6",
-        "Name": " John Quincy Adams",
+        "Name": "John Quincy Adams",
         "Term Years": "1825\u20131829",
         "Vice President": "John C. Calhoun",
         "First Lady": "Louisa Adams",
@@ -67,7 +67,7 @@
     },
     "7": {
         "No": "7",
-        "Name": " Andrew Jackson",
+        "Name": "Andrew Jackson",
         "Term Years": "1829\u20131837",
         "Vice President": "John C. Calhoun, Martin Van Buren",
         "First Lady": "Emily Donelson, Sarah Jackson",
@@ -78,7 +78,7 @@
     },
     "8": {
         "No": "8",
-        "Name": " Martin Van Buren",
+        "Name": "Martin Van Buren",
         "Term Years": "1837\u20131841",
         "Vice President": "Richard Mentor Johnson",
         "First Lady": "Sarah Van Buren",
@@ -89,7 +89,7 @@
     },
     "9": {
         "No": "9",
-        "Name": " William Henry Harrison",
+        "Name": "William Henry Harrison",
         "Term Years": "1841",
         "Vice President": "John Tyler",
         "First Lady": "Anna Harrison",
@@ -100,18 +100,18 @@
     },
     "10": {
         "No": "10",
-        "Name": " John Tyler",
+        "Name": "John Tyler",
         "Term Years": "1841\u20131845",
         "Vice President": "None",
         "First Lady": "Letitia Tyler, Julia Tyler",
         "Party": "Whig ",
         "Birth-Death ": "March 29, 1790 \u2013 January 18, 1862",
         "IMG filepath": "../static/img/10_Tyler.jpeg",
-        "Description": "yler, who assumed the presidency after Harrison's death, faced significant opposition from his own party and struggled to enact his agenda. He championed westward expansion and the annexation of Texas, but his presidency was marred by political strife. Tyler's actions set the stage for future territorial conflicts."
+        "Description": "Tyler, who assumed the presidency after Harrison's death, faced significant opposition from his own party and struggled to enact his agenda. He championed westward expansion and the annexation of Texas, but his presidency was marred by political strife. Tyler's actions set the stage for future territorial conflicts."
     },
     "11": {
         "No": "11",
-        "Name": " James K. Polk",
+        "Name": "James K. Polk",
         "Term Years": "1845\u20131849",
         "Vice President": "George M. Dallas",
         "First Lady": "Sarah Polk",
@@ -122,7 +122,7 @@
     },
     "12": {
         "No": "12",
-        "Name": " Zachary Taylor",
+        "Name": "Zachary Taylor",
         "Term Years": "1849\u20131850",
         "Vice President": "Millard Fillmore",
         "First Lady": "Margaret Taylor",
@@ -133,7 +133,7 @@
     },
     "13": {
         "No": "13",
-        "Name": " Millard Fillmore",
+        "Name": "Millard Fillmore",
         "Term Years": "1850\u20131853",
         "Vice President": "None",
         "First Lady": "Abigail Fillmore",
@@ -144,7 +144,7 @@
     },
     "14": {
         "No": "14",
-        "Name": " Franklin Pierce",
+        "Name": "Franklin Pierce",
         "Term Years": "1853\u20131857",
         "Vice President": "William R. King",
         "First Lady": "Jane Pierce",
@@ -155,7 +155,7 @@
     },
     "15": {
         "No": "15",
-        "Name": " James Buchanan",
+        "Name": "James Buchanan",
         "Term Years": "1857\u20131861",
         "Vice President": "John C. Breckinridge",
         "First Lady": "Harriet Lane",
@@ -166,7 +166,7 @@
     },
     "16": {
         "No": "16",
-        "Name": " Abraham Lincoln",
+        "Name": "Abraham Lincoln",
         "Term Years": "1861\u20131865",
         "Vice President": "Hannibal Hamlin, Andrew Johnson",
         "First Lady": "Mary Lincoln",
@@ -177,7 +177,7 @@
     },
     "17": {
         "No": "17",
-        "Name": " Andrew Johnson",
+        "Name": "Andrew Johnson",
         "Term Years": "1865\u20131869",
         "Vice President": "None",
         "First Lady": "Eliza Johnson",
@@ -188,7 +188,7 @@
     },
     "18": {
         "No": "18",
-        "Name": " Ulysses S. Grant",
+        "Name": "Ulysses S. Grant",
         "Term Years": "1869\u20131877",
         "Vice President": "Schuyler Colfax, Henry Wilson",
         "First Lady": "Julia Grant",
@@ -199,7 +199,7 @@
     },
     "19": {
         "No": "19",
-        "Name": " Rutherford B. Hayes",
+        "Name": "Rutherford B. Hayes",
         "Term Years": "1877\u20131881",
         "Vice President": "William A. Wheeler",
         "First Lady": "Lucy Hayes",
@@ -210,7 +210,7 @@
     },
     "20": {
         "No": "20",
-        "Name": " James A. Garfield",
+        "Name": "James A. Garfield",
         "Term Years": "1881",
         "Vice President": "Chester A. Arthur",
         "First Lady": "Lucrieta Garfield",
@@ -221,7 +221,7 @@
     },
     "21": {
         "No": "21",
-        "Name": " Chester A. Arthur",
+        "Name": "Chester A. Arthur",
         "Term Years": "1881\u20131885",
         "Vice President": "None",
         "First Lady": "Mary McElroy",
@@ -232,7 +232,7 @@
     },
     "22": {
         "No": "22",
-        "Name": " Grover Cleveland",
+        "Name": "Grover Cleveland",
         "Term Years": "1885\u20131889",
         "Vice President": "Thomas A. Hendricks",
         "First Lady": "Rose Cleveland, Frances Cleveland",
@@ -243,7 +243,7 @@
     },
     "23": {
         "No": "23",
-        "Name": " Benjamin Harrison",
+        "Name": "Benjamin Harrison",
         "Term Years": "1889\u20131893",
         "Vice President": "Levi P. Morton",
         "First Lady": "Caroline Harrison, Mary Harrison McKee",
@@ -254,7 +254,7 @@
     },
     "24": {
         "No": "24",
-        "Name": " Grover Cleveland",
+        "Name": "Grover Cleveland",
         "Term Years": "1893\u20131897",
         "Vice President": "Adlai Stevenson I",
         "First Lady": "Frances Cleveland",
@@ -265,7 +265,7 @@
     },
     "25": {
         "No": "25",
-        "Name": " William McKinley",
+        "Name": "William McKinley",
         "Term Years": "1897\u20131901",
         "Vice President": "Garret A. Hobart, Theodore Roosevelt",
         "First Lady": "Ida McKinley",
@@ -276,7 +276,7 @@
     },
     "26": {
         "No": "26",
-        "Name": " Theodore Roosevelt",
+        "Name": "Theodore Roosevelt",
         "Term Years": "1901\u20131909",
         "Vice President": "Charles W. Fairbanks",
         "First Lady": "Edith Roosevelt",
@@ -287,7 +287,7 @@
     },
     "27": {
         "No": "27",
-        "Name": " William Howard Taft",
+        "Name": "William Howard Taft",
         "Term Years": "1909\u20131913",
         "Vice President": "James S. Sherman",
         "First Lady": "Helen Taft",
@@ -298,7 +298,7 @@
     },
     "28": {
         "No": "28",
-        "Name": " Woodrow Wilson",
+        "Name": "Woodrow Wilson",
         "Term Years": "1913\u20131921",
         "Vice President": "Thomas R. Marshall",
         "First Lady": "Ellen Wilson, Edith Wilson",
@@ -309,7 +309,7 @@
     },
     "29": {
         "No": "29",
-        "Name": " Warren G. Harding",
+        "Name": "Warren G. Harding",
         "Term Years": "1921\u20131923",
         "Vice President": "Calvin Coolidge",
         "First Lady": "Florence Harding ",
@@ -320,7 +320,7 @@
     },
     "30": {
         "No": "30",
-        "Name": " Calvin Coolidge",
+        "Name": "Calvin Coolidge",
         "Term Years": "1923\u20131929",
         "Vice President": "Charles Curtis",
         "First Lady": "Grace Coolidge",
@@ -331,7 +331,7 @@
     },
     "31": {
         "No": "31",
-        "Name": " Herbert Hoover",
+        "Name": "Herbert Hoover",
         "Term Years": "1929\u20131933",
         "Vice President": "Charles Curtis",
         "First Lady": "Lou Hoover",
@@ -342,7 +342,7 @@
     },
     "32": {
         "No": "32",
-        "Name": " Franklin D. Roosevelt",
+        "Name": "Franklin D. Roosevelt",
         "Term Years": "1933\u20131945",
         "Vice President": "John Nance Garner, Henry A. Wallace, Harry S. Truman",
         "First Lady": "Eleanor Roosevelt ",
@@ -353,7 +353,7 @@
     },
     "33": {
         "No": "33",
-        "Name": " Harry S. Truman",
+        "Name": "Harry S. Truman",
         "Term Years": "1945\u20131953",
         "Vice President": "Alben W. Barkley",
         "First Lady": "Elizabeth Truman",
@@ -364,7 +364,7 @@
     },
     "34": {
         "No": "34",
-        "Name": " Dwight D. Eisenhower",
+        "Name": "Dwight D. Eisenhower",
         "Term Years": "1953\u20131961",
         "Vice President": "Richard Nixon",
         "First Lady": "Mamie Eisenhower",
@@ -375,7 +375,7 @@
     },
     "35": {
         "No": "35",
-        "Name": " John F. Kennedy",
+        "Name": "John F. Kennedy",
         "Term Years": "1961\u20131963",
         "Vice President": "Lyndon B. Johnson",
         "First Lady": "Jacqueline Kennedy",
@@ -386,7 +386,7 @@
     },
     "36": {
         "No": "36",
-        "Name": " Lyndon B. Johnson",
+        "Name": "Lyndon B. Johnson",
         "Term Years": "1963\u20131969",
         "Vice President": "Hubert Humphrey",
         "First Lady": "Claudia Johnson",
@@ -397,7 +397,7 @@
     },
     "37": {
         "No": "37",
-        "Name": " Richard Nixon",
+        "Name": "Richard Nixon",
         "Term Years": "1969\u20131974",
         "Vice President": "Spiro Agnew, Gerald Ford",
         "First Lady": "Thelma Nixon",
@@ -408,7 +408,7 @@
     },
     "38": {
         "No": "38",
-        "Name": " Gerald Ford",
+        "Name": "Gerald Ford",
         "Term Years": "1974\u20131977",
         "Vice President": "Nelson Rockefeller",
         "First Lady": "Elizabeth Ford",
@@ -419,7 +419,7 @@
     },
     "39": {
         "No": "39",
-        "Name": " Jimmy Carter",
+        "Name": "Jimmy Carter",
         "Term Years": "1977\u20131981",
         "Vice President": "Walter Mondale",
         "First Lady": "Rosalynn Carter",
@@ -430,7 +430,7 @@
     },
     "40": {
         "No": "40",
-        "Name": " Ronald Reagan",
+        "Name": "Ronald Reagan",
         "Term Years": "1981\u20131989",
         "Vice President": "George H. W. Bush",
         "First Lady": "Nancy Reagan ",
@@ -441,7 +441,7 @@
     },
     "41": {
         "No": "41",
-        "Name": " George H. W. Bush",
+        "Name": "George H. W. Bush",
         "Term Years": "1989\u20131993",
         "Vice President": "Dan Quayle",
         "First Lady": "Barbara Bush",
@@ -463,7 +463,7 @@
     },
     "43": {
         "No": "43",
-        "Name": " George W. Bush",
+        "Name": "George W. Bush",
         "Term Years": "2001\u20132009",
         "Vice President": "Dick Cheney",
         "First Lady": "Laura Bush",
@@ -474,7 +474,7 @@
     },
     "44": {
         "No": "44",
-        "Name": " Barack Obama",
+        "Name": "Barack Obama",
         "Term Years": "2009\u20132017",
         "Vice President": "Joe Biden",
         "First Lady": "Michelle Obama",
@@ -485,7 +485,7 @@
     },
     "45": {
         "No": "45",
-        "Name": " Donald Trump",
+        "Name": "Donald Trump",
         "Term Years": "2017\u20132021",
         "Vice President": "Mike Pence",
         "First Lady": "Melania Trump",
@@ -496,7 +496,7 @@
     },
     "46": {
         "No": "46",
-        "Name": " Joe Biden",
+        "Name": "Joe Biden",
         "Term Years": "2021\u2013present",
         "Vice President": "Kamala Harris",
         "First Lady": "Jill Biden",
@@ -504,5 +504,16 @@
         "Birth-Death ": "November 20, 1942",
         "IMG filepath": "../static/img/46_Biden.jpeg",
         "Description": "Biden's presidency has focused on uniting the nation post-COVID-19 pandemic, implementing economic stimulus measures, and addressing climate change. He has emphasized social justice, infrastructure development, and rebuilding alliances abroad. His administration faces ongoing challenges, including political polarization and economic recovery efforts."
-    }
+    },
+    "47": {
+        "No": "47",
+        "Name": "Donald Trump",
+        "Term Years": "2025\u20132029",
+        "Vice President": "J.D. Vance",
+        "First Lady": "Melania Trump",
+        "Party": "Republican",
+        "Birth-Death ": "June 14, 1946",
+        "IMG filepath": "../static/img/45_Trump.jpeg",
+        "Description": "Trump recently won the United States Presidential Election against Democratic nominee and current vice president Kamala Harris. He won with 312 electoral college votes and also won the popular vote. His campagin focused on the economy, foreign policiy, and immigration."
+}
 }

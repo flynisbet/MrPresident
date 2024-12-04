@@ -1,32 +1,16 @@
-const questions = [
-    {
-        question: "Who was the first president of the United States?", 
-        answers: [
-            { text: "Barack Obama" , correct : false}, 
-            { text: "George Washington" , correct : true}, 
-            { text: "Donald Trump" , correct : false}, 
-            { text: "Joe Biden" , correct : false}, 
-        ]
-    }, 
-    {
-        question: "Who is the most recent president of the United States?", 
-        answers: [
-            { text: "Barack Obama" , correct : false}, 
-            { text: "George Washington" , correct : false}, 
-            { text: "Donald Trump" , correct : false}, 
-            { text: "Joe Biden" , correct : true}, 
-        ]
-    }, 
-    {
-        question: "Where is Furman University?", 
-        answers: [
-            { text: "South Carolina" , correct : true}, 
-            { text: "North Carolina" , correct : false}, 
-            { text: "Georgia" , correct : false}, 
-            { text: "New York" , correct : false}, 
-        ]
-    }, 
-]; 
+async function getQuestion() {
+    const url = "http://127.0.0.1/preQuiz";
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+        questions = await response.json();
+    } catch (error) {
+        console.error(error.message);
+    }
+    return questions;
+}
 
 const questionElement = document.getElementById("question"); 
 const answerButton = document.getElementById("answer-buttons"); 
@@ -36,20 +20,26 @@ let currentQuestionIndex = 0;
 let score = 0; 
 
 function startQuiz(){
-    currentQuestionIndex =0; 
-    socre = 0; 
     nextButton.innerHTML = "Next"; 
     showQuestion(); 
 }
 
-function showQuestion(){
+async function showQuestion(){
+    let questions = getQuestion();
+    const currentQuestionIndex = 0; 
+    let score = 0; 
+
+    console.log(questions);
     while(answerButton.firstChild){
         answerButton.removeChild(answerButton.firstChild)
     }
     nextButton.style.display = "none";
     let questionNo = currentQuestionIndex + 1; 
+    console.log("hello");
+    console.log(questions[currentQuestionIndex]);
+    console.log("end");
     let currentQuestion = questions[currentQuestionIndex]; 
-    
+    console.log(currentQuestion);
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question; 
     
     currentQuestion.answers.forEach(answer =>{
@@ -100,6 +90,7 @@ function handlenextButton(){
         showQuestion()
     }else{
         showScore();
+        nextButton.innerHTML = "Play Again"; 
     }
 }
 

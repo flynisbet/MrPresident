@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
+
+{% block title %} Presidential Timeline {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> 
+
+<header>
+    <img src="../static/img/dec_of_ind.jpg" alt="Banner Image">
+</header>
+<main>
+    <div class = "description-cont">
+        <div class="description-text">
+            <p>Step into the immersive world of American history, where the past comes alive through a dynamic timeline, engaging quizzes, and a customizable ranking system that sparks debates. Each president is brought to life with in-depth profile pages, complete with fascinating details and pivotal moments from their tenure. </p>
+            <h1>This is not just a site—it's a journey through the legacy of leadership that shaped a nation.</h1>
+        </div>
+    </div>
+    <div class="container">
+    <div class = 'row'>
+        <div class="item">
+            <img src="../static/img/timeline.png" alt="Image 1">
+            <a href="/timeline">Timeline</a>
+        </div>
+        <div class="item">
+            <img src="../static/img/mc.png" alt="Image 2">
+            <a href="/game">Game</a>
+        </div>
+    </div>
+    <div class = 'row'>
+        <div class="item">
+            <img src="../static/img/ranking.png" alt="Image 3">
+            <a href="/rank">Rank</a>
+        </div>
+        <div class="item">
+            <img src="../static/img/about.png" alt="Image 4">
+            <a href="/about">About</a>
+        </div>
+    </div>
+    </div>
+</main>
+
+{% endblock %}
