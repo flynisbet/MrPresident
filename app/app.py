@@ -1,7 +1,8 @@
-from flask import Flask, jsonify, render_template, abort
+from flask import Flask, jsonify, render_template, abort, request
 from flask_cors import CORS
 import sqlite3
 import json
+import datetime
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -68,3 +69,34 @@ def game2():
 def homepage(): 
     return render_template("home.html")
 
+
+
+@app.route("/add-rating", methods=['POST'])
+def add_data():
+    #grab data body
+    data = request.get_json()
+
+    score = data.get('score')
+    president = data.get('president')
+
+    cleanQuery = "UPDATE President SET Score = 0 WHERE Score IS NULL;"
+
+    modifiedDate = datetime.date.today()
+    query = """
+    UPDATE President
+    SET Score = Score + ?,
+    numVote = numVote + 1,
+    ModifyDate = ?
+    WHERE presidentName = ?;
+    """
+    values = (score, modifiedDate , president)
+
+    try:
+        db = get_db()  # Get the SQLite connection
+        cursor = db.cursor()
+        cursor.execute(cleanQuery)
+        cursor.execute(query, values)
+        db.commit()
+        return jsonify({"message": "Data inserted successfully!"}), 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500

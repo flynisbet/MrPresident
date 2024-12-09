@@ -12,8 +12,8 @@
 }
 
 .lightMode {
-    --background-color:rgb(253, 239, 221);
-    --primary-text: brown;
+    --background-color:#e5fffe;
+    --primary-text: #333333e5;
     --ComponentBase-color: #1E1E2F; 
     --humbar-color: #d7c593;  
     --search-box:#242448; 
@@ -465,6 +465,7 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    border: 1px solid red; 
 }
 
 .pres-container h2{
@@ -495,6 +496,9 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     align-self: center;
 }
 
+.pres-details{
+    border: 1px solid white;
+}
 .pres-details p {
     margin: 5px 0;
     font-size: 0.7em;
@@ -599,4 +603,61 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+  }
+
+  /* #star rating:  */
+  .rating-container {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+  .rating-container h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .star {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .star:hover,
+  .star:hover ~ .star {
+    color: #ffa500;
+  }
+
+  .star.selected {
+    color: #ffa500;
+  }
+
+  #rating-value {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  button {
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #e59400;
   }
