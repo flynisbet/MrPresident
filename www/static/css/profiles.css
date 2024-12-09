@@ -1,0 +1,62 @@
+.president-cards {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+  gap: 20px; 
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto; 
+}
+
+.president-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 350px;
+  width: 200px; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.president-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.president-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.president-name {
+  margin: 10px 0 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.president-title {
+  margin: 0;
+  font-size: 0.7em;
+  color: #666;
+  font-style: italic;
+}
+
+.president-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+.president-link:hover .president-card {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+

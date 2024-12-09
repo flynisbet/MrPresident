@@ -25,7 +25,8 @@ def create_table():
                 First_Lady VARCHAR(100),
                 Score INTEGER DEFAULT 0, 
                 ModifyDate DATE DEFAULT NULL, 
-                numVote INTEGER DEFAULT 0
+                numVote INTEGER DEFAULT 0, 
+                URL VARCHAR(100) DEFAULT NULL
             );
         '''
 
@@ -61,8 +62,8 @@ def insert_data_fromJSON():
 
     # Prepare the insert queries
     insert_president_query = '''
-    INSERT INTO President (presidentName, DOB, Death, First_Lady, Score, numVote)
-    VALUES (?, ?, ?, ?, ?, ?);
+    INSERT INTO President (presidentName, DOB, Death, First_Lady, Score, numVote, URL)
+    VALUES (?, ?, ?, ?, ?, ?, ?);
     '''
 
     insert_president_serve_query = '''
@@ -72,7 +73,8 @@ def insert_data_fromJSON():
 
     if response.status_code == 200:
         data = response.json()
-        for key in data:
+        for key in sorted(data.keys(), key=int):
+            print(key)
             president = data[key]
             
             # Parse Birth and Death dates
@@ -89,7 +91,7 @@ def insert_data_fromJSON():
             # Insert into President table
             cursor.execute(
                 insert_president_query, 
-                (president["Name"], birth, death, president["First Lady"], None, 0)  # Default score and numVote
+                (president["Name"], birth, death, president["First Lady"], None, 0, president["IMG filepath"])  # Default score and numVote
             )
             
             # Get the last inserted presidentID
@@ -157,12 +159,8 @@ def remove_duplicates():
     HAVING COUNT(*) > 1;
 
     ''')
-
  
-
     duplicates = cursor.fetchall()
-
- 
 
     if duplicates:
 
@@ -191,10 +189,6 @@ def remove_duplicates():
         conn.commit()
 
         print("Duplicates removed successfully.")
-
- 
-
-   
 
     conn.close()
 

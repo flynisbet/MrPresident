@@ -2,14 +2,22 @@
 {% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
 
 {% block title %} Presidential Timeline {% endblock %}
+{% block style%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profiles.css') }}"> 
+{% endblock%}
+
 
 {% block content %}
     <div class="searchBox">
         <input type="text" placeholder='Search....' id ='search'>
-        
         <ul id='results'>
 
         </ul>
+    </div>
+
+    <div class="content-switcher">
+        <button id="timelineButton" class="switch-button active">Timeline</button>
+        <button id="profileButton" class="switch-button">Details</button>
     </div>
 
 
@@ -19,12 +27,36 @@
     </div>
     </section>
 
+
+<section id = "profiles">
+<div class="president-cards">
+    <h1>President Profile</h1>
+    {% for president in presidents %}
+    <a href="/president/{{ president['presidentID'] }}">
+    <div class="president-card">
+        <img src="{{ president['URL'] }}" alt="{{ president['presidentName'] }}" class="president-image">
+        <h3 class="president-name">{{ president['presidentName'] }}</h3>
+        <p class="president-title">{{ president['presidentTitle'] }}</p>
+    </div>      
+    </a>
+    {% else %}
+    <p>No presidents found</p>
+    {% endfor %}
+</div>
+    </section>
+
     <div id="flyIcon" onclick ='scrollUp()' >
         <img src="https://img.icons8.com/?size=100&id=166&format=png&color=000000" alt="flyicon"  />
     </div>
    
-
-    
-    
-
    {% endblock %}
+
+   {% block script%} 
+   <script src = "{{ url_for('static', filename='script/profiles.js') }}" defer></script>
+   <script src = "{{ url_for('static', filename='script/styles.js') }}" defer></script>
+   {% endblock %}
+
+
+   
+
+   

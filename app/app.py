@@ -36,7 +36,11 @@ def presidentQuiz():
 
 @app.route("/timeline")
 def timeline(): 
-    return render_template('timeline.html', page_title="Home_President")
+    with get_db() as conn:
+        cursor = conn.cursor()
+        cursor.execute('SELECT * FROM President')
+        users = cursor.fetchall()
+    return render_template('timeline.html', page_title="Home_President" , presidents = users)
 
 @app.route("/about")
 def about(): 
@@ -100,3 +104,13 @@ def add_data():
         return jsonify({"message": "Data inserted successfully!"}), 201
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+
+@app.route("/presidents")
+def profiles(): 
+    with get_db() as conn:
+        cursor = conn.cursor()
+        cursor.execute('SELECT * FROM President')
+        users = cursor.fetchall()
+    return render_template("profile.html", presidents = users)
+
