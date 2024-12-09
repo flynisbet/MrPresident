@@ -557,19 +557,17 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
 }
 
 .footer-container {
-    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px;
     margin: 0 auto;
     gap: 20px; 
-    border-top: 1px solid white;
-   
 }
 
 .footer-contact, .footer-copyright {
-   
     flex: 1; 
-    text-align: center; 
+    text-align: left; 
     padding: 10px;
 }
 
