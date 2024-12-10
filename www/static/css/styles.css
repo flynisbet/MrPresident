@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap');
 
 :root{
-    --background-color: #333333e5;
-    --primary-text: #F5F5F5;
-    --ComponentBase-color: white;
+    --background-color: #003049;
+    --primary-text: #fdf0d5;
+    --ComponentBase-color: #fdf0d5;
     --humbar-color: #d7c593;
     --search-box: #1E1E2F;
     --textbox-color: #2F363E;
@@ -12,9 +12,9 @@
 }
 
 .lightMode {
-    --background-color:#e5fffe;
-    --primary-text: #333333e5;
-    --ComponentBase-color: #1E1E2F; 
+    --background-color:#fdf0d5;
+    --primary-text: #003049;
+    --ComponentBase-color: #003049; 
     --humbar-color: #d7c593;  
     --search-box:#242448; 
     --textbox-color: #E0E0E0;
