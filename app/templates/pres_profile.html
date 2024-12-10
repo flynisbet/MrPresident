@@ -33,6 +33,19 @@
       <p id="rating-value">Rating: 0</p>
       <button id="submit-rating" > Submit Rating</button>
 </div>
+<div class="pres-buttons">
+        {% if pres_before > 0 %}
+            <a href="{{ url_for('president_profile', president_number=pres_before) }}" class="pres-button prev-button">
+            Previous
+            </a>
+        {% endif %}
+        {% if 48 > pres_after %}
+            <a href="{{ url_for('president_profile', president_number=pres_after) }}" class="pres-button next-button">
+             Next
+            </a>
+        {% endif %}
+    </div>
+
 {% endblock %}
 
 {% block script%} <script src = "{{ url_for('static', filename='script/rating.js') }}" defer></script>

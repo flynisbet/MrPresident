@@ -18,7 +18,7 @@ def get_db():
 def ranking():
     with get_db() as conn:
         cursor = conn.cursor()
-        cursor.execute('SELECT * FROM President')
+        cursor.execute('SELECT presidentID, presidentName,Score, AVG(CAST(Score AS FLOAT) / NULLIF(numVote, 0)) AS AverageScorePerVote FROM President GROUP BY presidentID ORDER BY AverageScorePerVote DESC;')
         users = cursor.fetchall()
     return render_template('ranking.html', page_title = "Ranking", presidents = users)
 
@@ -50,15 +50,15 @@ def about():
 def quizGame():
     return render_template("game/quiz_game.html")
 
-@app.route('/president/<int:president_number>')
-def president_profile(president_number):
-    with open('../www/static/json/mrPresident.json', 'r') as file:
-        presidents = json.load(file)
-    president = presidents.get(str(president_number))
+# @app.route('/president/<int:president_number>')
+# def president_profile(president_number):
+#     with open('../www/static/json/mrPresident.json', 'r') as file:
+#         presidents = json.load(file)
+#     president = presidents.get(str(president_number))
     
-    if not president:
-        abort(404)
-    return render_template('pres_profile.html', president=president)
+#     if not president:
+#         abort(404)
+#     return render_template('pres_profile.html', president=president)
 
 @app.route("/game")
 def Hi():
@@ -114,3 +114,16 @@ def profiles():
         users = cursor.fetchall()
     return render_template("profile.html", presidents = users)
 
+@app.route('/president/<int:president_number>')
+def president_profile(president_number):
+    with open('../www/static/json/mrPresident.json', 'r') as file:
+        presidents = json.load(file)
+    president = presidents.get(str(president_number))
+    pres_before = president_number-1
+    pres_after = president_number+1
+    if not president:
+        abort(404)
+    return render_template('pres_profile.html',
+                           president=president,
+                           pres_after=pres_after,
+                           pres_before=pres_before)

@@ -53,5 +53,16 @@
         margin-top: 20px
     }
 
+    /* card president profile */
+    .president-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center content */
+        gap: 20px;
+    }
+
+    .president-card {
+        width: 90%; /* Adjust width to fit smaller screens */
+    }
+
 }
 

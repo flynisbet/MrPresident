@@ -19,21 +19,29 @@
     <div class="container">
     <div class = 'row'>
         <div class="item">
-            <img src="../static/img/timeline.png" alt="Image 1">
+            <a href="/timeline">
+            <img src="{{ url_for('static', filename='img/timeline.png') }}" alt="timelines">
+            </a>
             <a href="/timeline">Timeline</a>
         </div>
         <div class="item">
-            <img src="../static/img/mc.png" alt="Image 2">
+            <a href="/game">
+            <img src="{{ url_for('static', filename='img/mc.png') }}" alt="mc">
+            </a>
             <a href="/game">Game</a>
         </div>
     </div>
     <div class = 'row'>
         <div class="item">
-            <img src="../static/img/ranking.png" alt="Image 3">
+            <a href="/rank">
+            <img src="{{ url_for('static', filename='img/ranking.png') }}" alt="pf">
+            </a>
             <a href="/rank">Rank</a>
         </div>
         <div class="item">
-            <img src="../static/img/about.png" alt="Image 4">
+            <a href="/about">
+            <img src="{{ url_for('static', filename='img/about.png') }}" alt="About">
+            </a>
             <a href="/about">About</a>
         </div>
     </div>

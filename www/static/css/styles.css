@@ -513,7 +513,7 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     line-height: 1.5;
 }
 
-/*  Testing dark and light mode*/
+
 /* New Mode */
 .switch-mode{
     height: 50px; 
@@ -659,3 +659,60 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
   button:hover {
     background-color: #e59400;
   }
+
+
+  /* flynn style button  next previous */
+  .pres-buttons {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 50;
+}
+.pres-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.pres-button:hover {
+    background-color: white;
+    color: #3F351D;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.prev-button::before {
+    margin-right: 5px;
+}
+.next-button::after {
+    margin-left: 5px;
+}
+
+
+/* table */
+table.presidentList {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+table.presidentList th, 
+table.presidentList td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.presidentList th {
+    font-weight: bold;
+    text-align: center;
+}
+
+table.presidentList td {
+    text-align: center;
+}

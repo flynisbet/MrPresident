@@ -11,8 +11,8 @@
         <tr>
             <th>President ID</th>
             <th>Name</th>
-          
             <th>Score</th>
+            <th> Average </th>
         </tr>
     </thead>
     <tbody>
@@ -21,6 +21,7 @@
                 <td>{{ president['presidentID'] }}</td>
                 <td>{{ president['presidentName'] }}</td>
                 <td>{{ president['Score'] | default('No Score', true) }}</td>
+                <td>{{president['AverageScorePerVote']}}</td>
             </tr>
         {% else %}
             <tr>
