@@ -9,11 +9,11 @@
     <div class = 'pres-info'>
     <img src="{{ president['IMG filepath'] }}" alt="{{ president['Name'] }}" class="pres-image">
         <div class="pres-details">
-            <p>President Number: {{ president["No"] }}</p>
-            <p>Years Served: {{ president["Term Years"] }}</p>
-            <p>Vice President: {{ president["Vice President"] }}</p>
-            <p>First Lady: {{ president["First Lady"] }}</p>
-            <p>Party: {{ president["Party"] }}</p>
+            <p> <b>President Number</b>: {{ president["No"] }}</p>
+            <p><b>Years Served</b>: {{ president["Term Years"] }}</p>
+            <p><b>Vice President</b>: {{ president["Vice President"] }}</p>
+            <p><b>First Lady</b>: {{ president["First Lady"] }}</p>
+            <p><b>Party</b>: {{ president["Party"] }}</p>
         </div>
     </div>  
     <div class = 'pres-description'>
@@ -22,7 +22,7 @@
 </div>
 
 <div class="rating-container" data-president-name="{{ president['Name']}}">
-    <h1> how would you rate <b>{{president["Name"]}}</b> </h1>
+    <h1> How would you rate <b>{{president["Name"]}} </b> ? </h1>
     <div class="star-rating">
         <span class="star" data-value="1">&#9733;</span>
         <span class="star" data-value="2">&#9733;</span>

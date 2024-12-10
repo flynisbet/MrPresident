@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             disableSubmission();
         })
         .catch(error => {
-            alert('Rating UNNNubmitted successfully!');
             console.error('Error:', error);
             alert('Failed to submit rating. Please try again.');
         });
