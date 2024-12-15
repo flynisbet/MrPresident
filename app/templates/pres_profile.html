@@ -1,13 +1,17 @@
 {% extends 'layout.html' %}
+
 {% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
 
+{% block  style %} 
+<link rel="stylesheet" href="static/css/styles.css"> 
+{%endblock%}
 {% block title %} About {{ president['Name'] }}{% endblock %}
 
 {% block content %}
 <div class="pres-container">
     <h2>{{ president["Name"] }}</h2>
     <div class = 'pres-info'>
-    <img src="{{ president['IMG filepath'] }}" alt="{{ president['Name'] }}" class="pres-image">
+    <img src="{{president['IMG filepath']}}"  alt="{{ president['Name'] }}" class="pres-image">
         <div class="pres-details">
             <p> <b>President Number</b>: {{ president["No"] }}</p>
             <p><b>Years Served</b>: {{ president["Term Years"] }}</p>
