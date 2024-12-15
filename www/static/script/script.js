@@ -8,8 +8,8 @@ function toggleMenu(){
 
 async function getData() {
     const baseUrl = window.location.origin; 
-    console.log("hello")
-    console.log(baseUrl)
+    console.log("hello");
+    console.log(baseUrl);
     const url = "pres";
     try {
         const response = await fetch(url);

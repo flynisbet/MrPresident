@@ -34,7 +34,7 @@
     {% for president in presidents %}
     <a href="/president/{{ president['presidentID'] }}">
     <div class="president-card">
-        <img src="{{ president['URL'] }}" alt="{{ president['presidentName'] }}" class="president-image">
+        <img src="president['URL']" alt="{{ president['presidentName'] }}" class="president-image">
         <h3 class="president-name">{{ president['presidentName'] }}</h3>
         <p class="president-title">{{ president['presidentTitle'] }}</p>
     </div>      
