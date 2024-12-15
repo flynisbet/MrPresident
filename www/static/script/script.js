@@ -7,10 +7,10 @@ function toggleMenu(){
 }
 
 async function getData() {
-    const baseUrl = window.location.origin; 
-    console.log("hello");
-    console.log(baseUrl);
-    const url = "pres";
+     // Get the current URL and expand the route
+     const baseUrl = window.location.origin; // Gets the origin of the current URL (e.g., http://example.com)
+     const route = "/pres"; // Specify your desired route
+     const url = `${baseUrl}${route}`; // Combine to form the full URL
     try {
         const response = await fetch(url);
         if (!response.ok) {
