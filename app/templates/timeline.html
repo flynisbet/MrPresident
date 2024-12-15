@@ -52,8 +52,14 @@
    {% endblock %}
 
    {% block script%} 
-   <script src = "{{ url_for('static', filename='script/profiles.js') }}" defer></script>
-   <script src = "{{ url_for('static', filename='script/styles.js') }}" defer></script>
+  <!-- 
+  <script src = "{{ url_for('static', filename='script/profiles.js') }}" defer></script>
+   
+   <script src = "{{ url_for('static', filename='script/styles.js') }}" defer></script> 
+  --> 
+
+   <link src="static/script/styles.js" der> 
+   <link src="static/script/profiles.js" defer> 
    {% endblock %}
 
 
