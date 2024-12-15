@@ -110,7 +110,7 @@ def create_app(shared_server=False):
             users = cursor.fetchall()
         return render_template("profile.html", presidents = users)
 
-    @app.route(prepend + 'president<int:president_number>')
+    @app.route(prepend + '/president<int:president_number>')
     def president_profile(president_number):
         with open('../www' + prepend +'/static/json/mrPresident.json', 'r') as file:
             presidents = json.load(file)

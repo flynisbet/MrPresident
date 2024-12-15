@@ -32,7 +32,7 @@
 <div class="president-cards">
     <h1>President Profile</h1>
     {% for president in presidents %}
-    <a href="president/{{ president['presidentID'] }}">
+    <a href="president{{ president['presidentID'] }}">
     <div class="president-card">
         <img src="{{president['URL']}}" alt="{{ president['presidentName'] }}" class="president-image">
         <h3 class="president-name">{{ president['presidentName'] }}</h3>
