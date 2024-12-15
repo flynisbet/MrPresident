@@ -7,7 +7,7 @@ function toggleMenu(){
 }
 
 async function getData() {
-    const url = "http://127.0.0.1:81/pres";
+    const url = "pres";
     try {
         const response = await fetch(url);
         if (!response.ok) {
