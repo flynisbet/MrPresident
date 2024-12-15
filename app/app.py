@@ -30,7 +30,7 @@ def create_app(shared_server=False):
 
     @app.route(prepend + "/pres")
     def presidentData():
-        with open('../www/static/json/mrPresident.json', 'r') as file:
+        with open('../www' + prepend + '/static/json/mrPresident.json', 'r') as file:
             presidents = json.load(file)
         return jsonify(presidents)
 
