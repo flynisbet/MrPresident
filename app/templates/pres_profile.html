@@ -10,7 +10,8 @@
 <div class="pres-container">
     <h2>{{ president["Name"] }}</h2>
     <div class = 'pres-info'>
-    <img src="static/img/1_Washington.jpeg" alt="{{ president['Name'] }}" class="pres-image">
+    <img src="{{president['IMG filepath']}}" alt="{{ president['Name'] }}" class="pres-image">
+    <h1>{{president['IMG filepath']}}</h1>
 
         <div class="pres-details">
             <p> <b>President Number</b>: {{ president["No"] }}</p>
