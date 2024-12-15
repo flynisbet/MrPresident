@@ -3,27 +3,23 @@
 <head>
     <title>{% block title %}Mr. President{% endblock %}</title>
     <meta charset="UTF-8">
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block viewport%} {% endblock%}
     {% block style%} {% endblock%}
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <script>
         if (localStorage.getItem('lightMode') === 'active') {
             document.documentElement.classList.add('lightMode');
         }
     </script>
-   <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutStyles.css') }}">
-    -->
     <link rel="stylesheet" href="static/css/styles.css">  
     <link rel="stylesheet" href="static/css/mediaqueries.css"> 
     <link rel="stylesheet" href="static/css/aboutstyles.css"> 
 
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
    
-    
 </head>
 
 <body>
