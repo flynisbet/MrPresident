@@ -36,7 +36,7 @@ def create_app(shared_server=False):
 
     @app.route(prepend + "/preQuiz")
     def presidentQuiz():
-        with open('../www'+ prepend + 'static/json/mrPresidentQuiz.json', 'r') as file:
+        with open('../www'+ prepend + '/static/json/mrPresidentQuiz.json', 'r') as file:
             presidentQuiz = json.load(file)
         return jsonify(presidentQuiz)
 
@@ -112,7 +112,7 @@ def create_app(shared_server=False):
 
     @app.route(prepend + '/president/<int:president_number>')
     def president_profile(president_number):
-        with open('../www' + prepend +'static/json/mrPresident.json', 'r') as file:
+        with open('../www' + prepend +'/static/json/mrPresident.json', 'r') as file:
             presidents = json.load(file)
         president = presidents.get(str(president_number))
         pres_before = president_number-1
