@@ -1,93 +1,76 @@
 {% extends 'layout.html' %}
-
 {% block title %} About Mr. President {% endblock %}
 {% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
 {% block content %}
-
-<link rel="stylesheet" href="static/css/aboutstyles.css"> 
+<link rel="stylesheet" href="static/css/aboutstyles.css">
 <section id="section__about">
     <div class="about__purpose">
-        <img src="static/img/whiteHouse.avif" alt="psdf" class="whiteHouse"> 
-       
+        <img src="static/img/whiteHouse.avif" alt="psdf" class="whiteHouse">
         <h1>Purpose</h1>
         <p>
             Mr. President is an interactive timeline of the United States presidents.
-            Each president photo on the timeline is linked to a profile page with fun facts, 
-            historical and biographical information, and a ranking feature. 
-            The ranking featureallows you to rank each president on a scale of 0-100. 
-            On the ranking page, you can see the weekly trends of how each president scores up. 
+            Each president photo on the timeline is linked to a profile page with fun facts,
+            historical and biographical information, and a ranking feature.
+            The ranking feature allows you to rank each president on a scale of 1-5 stars.
+            On the ranking page, you can how each president scores up.
             The page allows the user to view historical trends of how their favorite president
             falls in the rankings from week to week!
-            We hope you enjoy learning about the American Presidents! 
+            We hope you enjoy learning about the American Presidents!
         </p>
-
     </div>
     <div class="about__author">
         <h1>Author</h1>
         <div class="containter__author">
             <div class="author">
                 <div class="author__photo">
-                    <img src="static/img/mengsrunpf.jpg" alt="psdf" alt = "pf"> 
-            
+                    <img src="static/img/mengsrunpf.jpg" alt="psdf" alt = "pf">
                 </div>
                 <div class="author__text">
                     <h2> Mengsrun Nit</h2>
                     <p>Hello I'm Mengsrun Nit, I am an Junior at Furman University
-                        I like watching soccer game, and I am a Bacelona Fan. I also like to cook and eat. 
+                        I like watching soccer game, and I am a Bacelona Fan. I also like to cook and eat.
                     </p>
                     <div class = 'contacts_author'>
-                        <a href="https://github.com/MengsrunNit"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/githubLogo.png') }}" alt="GitHub Logo"></div></a>
-                        <a href="https://www.linkedin.com/in/mengsrunnit/"><div class="tiny_picture"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn Logo"></div></a>
-
+                        <a href="https://github.com/MengsrunNit"> <div class = "tiny_picture"><img src=" static/img/githubLogo.png " alt="GitHub Logo"></div></a>
+                        <a href="https://www.linkedin.com/in/mengsrunnit/"><div class="tiny_picture"><img src=" static/img/linkedin.png " alt="LinkedIn Logo"></div></a>
                     </div>
                 </div>
             </div>
-
             <div class="author">
                 <div class="author__photo">
-                    <img src="{{ url_for('static', filename='img/olivia.jpeg') }}" alt="pf">
-                     
+                    <img src=" static/img/olivia.jpeg " alt="pf">
                 </div>
                 <div class="author__text">
                     <h2> Olivia Longsworth</h2>
-                    <p>I am a Furman IT and chemistry major. I love my pet turtle Mr. 
+                    <p>I am a Furman IT and chemistry major. I love my pet turtle Mr.
                         Spootus Mootis and gardening.
                     </p>
                     <div class = 'contacts_author'>
-                        <a href="https://github.com/olongsworth"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/githubLogo.png') }}" alt="GitHub Logo"></div></a>
-                        <a href="https://www.linkedin.com/in/olivia-longsworth/"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn Logo"></div></a>
+                        <a href="https://github.com/olongsworth"> <div class = "tiny_picture"><img src=" static/img/githubLogo.png " alt="GitHub Logo"></div></a>
+                        <a href="https://www.linkedin.com/in/olivia-longsworth/"> <div class = "tiny_picture"><img src=" static/img/linkedin.png " alt="LinkedIn Logo"></div></a>
                     </div>
                 </div>
-                
             </div>
-
             <div class="author">
                 <div class="author__photo">
-                    <img src="{{ url_for('static', filename='img/flynn.jpeg') }}" alt="pf">
-                     
-                    
+                    <img src="static/img/flynn.jpeg " alt="pf">
                 </div>
                 <div class="author__text">
                     <h2> Flynn Nisbet</h2>
                     <p>I am a Furman senior Computer Science major,
                         minoring in Data Analytics, who grew up in Cambodia.
-                        I went to high school in China, then the Netherlands, 
-                        before making it all the way to Furman. 
-                        I love all asian food, specifically Cambodian, 
-                        and go to Bulgogi Korean Grill frequently. 
+                        I went to high school in China, then the Netherlands,
+                        before making it all the way to Furman.
+                        I love all asian food, specifically Cambodian,
+                        and go to Bulgogi Korean Grill frequently.
                     </p>
                     <div class = 'contacts_author'>
-                        <a href="https://github.com/flynisbet"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/githubLogo.png') }}" alt="GitHub Logo"></div></a>
-                        <a href="https://www.linkedin.com/in/flynn-nisbet/"> <div class = "tiny_picture"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn Logo"></div></a>
+                        <a href="https://github.com/flynisbet"> <div class = "tiny_picture"><img src="static/img/githubLogo.png" alt="GitHub Logo"></div></a>
+                        <a href="https://www.linkedin.com/in/flynn-nisbet/"> <div class = "tiny_picture"><img src=" static/img/linkedin.png " alt="LinkedIn Logo"></div></a>
                     </div>
                 </div>
             </div>
     </div>
-
-   
-
    </section>
-
-   <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
-
+   <script src=" static/script/script.js "></script>
    {% endblock %}
