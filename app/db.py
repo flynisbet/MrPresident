@@ -195,10 +195,10 @@ def remove_duplicates():
 
 
 
-# create_table()
-# insert_data_fromJSON()
+create_table()
+insert_data_fromJSON()
 
-# remove_duplicates()
+remove_duplicates()
 
  
 
