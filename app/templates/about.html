@@ -3,11 +3,12 @@
 {% block title %} About Mr. President {% endblock %}
 {% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
 {% block content %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/aboutstyles.css') }}">
+
+<link rel="stylesheet" href="static/css/aboutstyles.css"> 
 <section id="section__about">
     <div class="about__purpose">
-        <img src="{{ url_for('mrpresident', filename='static/img/whiteHouse.avif') }}" alt="psdf" class="whiteHouse">
-                     
+        <img src="static/img/whiteHouse.avif" alt="psdf" class="whiteHouse"> 
+       
         <h1>Purpose</h1>
         <p>
             Mr. President is an interactive timeline of the United States presidents.
@@ -26,10 +27,8 @@
         <div class="containter__author">
             <div class="author">
                 <div class="author__photo">
-                    
-                    
-                    <img src="{{ url_for('static', filename='img/mengsrunpf.jpg') }}" alt="pf">
-                     
+                    <img src="static/img/mengsrunpf.jpg" alt="psdf" alt = "pf"> 
+            
                 </div>
                 <div class="author__text">
                     <h2> Mengsrun Nit</h2>
