@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // Check if a rating is already saved in localStorage
     const savedRating = localStorage.getItem(localStorageKey);
     if (savedRating) {
-        selectedRating = savedRating; // Set the selected rating from localStorage
-        setRating(selectedRating); // Apply the rating visually
-        disableSubmission(); // Disable interactions
+        selectedRating = savedRating; 
+        setRating(selectedRating);
+        disableSubmission(); 
     }
 
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         submitButton.textContent = "Rating Submitted";
         stars.forEach(star => {
             star.style.color = star.getAttribute('data-value') <= selectedRating ? 'red' : '#ccc';
-            star.style.pointerEvents = "none"; // Disable clicking on stars
+            star.style.pointerEvents = "none"; 
 
         });
     }

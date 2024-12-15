@@ -344,34 +344,35 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
 
 /* search icon */
 .searchBox {
-    margin: 20px;
+    margin: 20px auto;
     height: 50px;
     display: flex;
     justify-content: flex-start;
     cursor: pointer;
     padding: 10px;
-    width: 80% auto;
-    border-radius: 30px;
+    width: 450px; 
+    max-width: 90%; 
+    border-radius: 5px; 
     align-items: center;
-    background-color: var( --search-box); 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    background-color: var(--search-box); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     position: relative; 
     z-index: 1;
+    transition: all 0.3s ease-in-out; 
 }
 
-.searchBox a img {
-    padding: 0;
-    margin: 0;
-    max-width: 35px;
-    height: 100%;
+.searchBox:hover {
+    background-color: #404552; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
+/* Search Input */
 .searchBox input {
     width: 0;
     outline: none;
     border: none;
     font-weight: 500;
-    transition: width 1s ease, color 0.3s ease;
+    transition: width 0.5s ease, color 0.3s ease;
     background: transparent;
     color: #ECEFF4; 
     height: 100%;
@@ -387,29 +388,26 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     border-bottom: 2px solid #5E81AC;
 }
 
-.searchBox:hover {
-    background-color: #404552; 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); 
-}
-
-/* Search Results Styling */
+/* Search Results Dropdown */
 #results {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%; 
-    max-height:200px; 
+    max-width: 450px; 
+    max-height: 200px; 
     overflow-y: auto; 
     background-color: #2C2F33;
-    border-radius: 0 0 10px 10px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     position: absolute;
     top: 60px; 
     left: 0;
-    z-index: 10; /* Ensures the dropdown appears above other elements */
+    z-index: 10;
+    border: 1px solid #404552; 
 }
 
-/* Search result items */
+/* Search Result Items */
 #results li {
     padding: 10px;
     color: #ECEFF4;
@@ -417,10 +415,12 @@ Youtube 2: https://www.youtube.com/watch?v=1tLJEQwmVww&list=LL&index=2&t=621s
     cursor: pointer;
     display: block; 
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 #results li:hover {
-    background-color: #404552;
+    background-color: #5E81AC; 
 }
 
 /* Remove the bottom border for the last item */

@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const profilesButton = document.getElementById('profileButton');
     const timelineContent = document.getElementById('timeline');
     const profileContent = document.getElementById('profiles');
+    const searchBox = document.querySelector('.searchBox'); 
+    
 
     profileContent.style.display = 'none';
    
@@ -34,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
        
         timelineContent.style.display = 'block';
         profileContent.style.display = 'none';
+        searchBox.style.display = 'block';
 
       
         timelineButton.classList.add('active');
@@ -44,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
        
         profileContent.style.display = 'block';
         timelineContent.style.display = 'none';
-
+        searchBox.style.display = 'none';
         profilesButton.classList.add('active');
         timelineButton.classList.remove('active');
     });

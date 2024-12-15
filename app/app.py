@@ -65,7 +65,7 @@ def create_app(shared_server=False):
         return render_template("game/guess_game.html")
 
 
-    @app.route(prepend + "/")
+    @app.route(prepend + "/home")
     def homepage(): 
         return render_template("home.html")
 
