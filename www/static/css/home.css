@@ -1,21 +1,4 @@
-:root {
-    --background-color: #466FA6;
-    --primary-text: #FDF0D5;
-    --component-base-color: #FDF0D5;
-    --humbar-color: #D7C593;
-    --search-box: #555555;
-    --textbox-color: #767778;
-    --contrast-back: rgb(253, 239, 221);
-}
-.lightMode {
-    --background-color: #FDF0D5;
-    --primary-text: #003049;
-    --component-base-color: #003049;
-    --humbar-color: #D7C593;
-    --search-box: #FDF0D5;
-    --textbox-color: #FFFFFF;
-    --contrast-back: #1E1E2F;
-}
+
 body {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
