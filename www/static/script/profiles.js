@@ -1,5 +1,5 @@
  const container = document.getElementById("president-cards");
-  //comment
+
   presidents.forEach((president) => {
 
     const card = document.createElement("div");
