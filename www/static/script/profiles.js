@@ -1,26 +1,26 @@
- const container = document.getElementById("president-cards");
+//  const container = document.getElementById("president-cards");
 
-  presidents.forEach((president) => {
+//   presidents.forEach((president) => {
 
-    const card = document.createElement("div");
-    card.classList.add("card");
+//     const card = document.createElement("div");
+//     card.classList.add("card");
   
-    const img = document.createElement("img");
-    img.src = president.image;
-    img.alt = president.name;
-    card.appendChild(img);
+//     const img = document.createElement("img");
+//     img.src = president.image;
+//     img.alt = president.name;
+//     card.appendChild(img);
   
-    const name = document.createElement("h3");
-    name.textContent = president.name;
-    card.appendChild(name);
+//     const name = document.createElement("h3");
+//     name.textContent = president.name;
+//     card.appendChild(name);
   
 
-    const title = document.createElement("p");
-    title.textContent = president.title;
-    card.appendChild(title);
+//     const title = document.createElement("p");
+//     title.textContent = president.title;
+//     card.appendChild(title);
   
-    container.appendChild(card);
-  });
+//     container.appendChild(card);
+//   });
 
   document.addEventListener('DOMContentLoaded', () => {
     // Get elements for button logic
@@ -76,3 +76,5 @@
         })
         .catch(err => console.error('Error fetching presidents:', err));
 });
+
+
