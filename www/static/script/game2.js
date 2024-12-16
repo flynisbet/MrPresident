@@ -1,7 +1,7 @@
 let jsonData3; // Ensure jsonData3 is declared globally once
 
 async function getData2() {
-    const url = "http://127.0.0.1:81/pres";
+    const url = "static/json/pres";
     try {
         if (jsonData3) {
             console.log("Data already fetched, skipping fetch.");
@@ -93,4 +93,4 @@ inputBox.addEventListener("keydown", function(event){
 
 
 getData2();
-//game 1
+//game 1d
