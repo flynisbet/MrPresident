@@ -7,12 +7,14 @@ async function getQuestion() {
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            alert("hello my friend you are fuck uped"); 
+            
             throw new Error(`Response status: ${response.status}`);
         }
 
         questions = await response.json(); 
+        console.log(questions);
         startQuiz(); 
+        
     } catch (error) {
         console.error(error.message);
     }
