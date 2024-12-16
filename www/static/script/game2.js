@@ -1,4 +1,4 @@
-let jsonData3; // Ensure jsonData3 is declared globally once
+let jsonData3; 
 
 async function getData2() {
     const url = "./static/json/mrPresident.json";
@@ -20,7 +20,6 @@ async function getData2() {
     }
 }
 
-
 function getRandomInt(min, max) {
     min = Math.ceil(min);   
     max = Math.floor(max); 
@@ -29,7 +28,7 @@ function getRandomInt(min, max) {
 
 function getFirstAndLastName(fullName) {
     if (!fullName.trim()) {
-        return { firstName: "", lastName: "" }; // Handle empty input
+        return { firstName: "", lastName: "" }; 
     }
 
     const nameParts = fullName.trim().split(/\s+/);
@@ -39,58 +38,64 @@ function getFirstAndLastName(fullName) {
     return { firstName, lastName };
 }
 
-
-
-
 let store = []; 
 function getpicture2() {
     let conts = document.querySelector('.mypresident');
-    
     console.log("getpicture2 called");
     const keys = Object.keys(jsonData3).map(Number);
-
     const easy = 5;
 
-
-    for (let i = 0; i < easy; i++)
-    {
-        let generated = getRandomInt(1,keys.length)
+    for (let i = 0; i < easy; i++) {
+        let generated;
+        do {
+            generated = getRandomInt(0, keys.length - 1);
+        } while (store.includes(generated));
         store.push(generated);
     }
-  
+
     console.log("Generated store array:", store);
 
-    for (let i =0; i < easy; i++){
-        let info = jsonData3[store[i]]
-        console.log(store[i]);
+    for (let i = 0; i < easy; i++) {
+        let info = jsonData3[store[i]];
+        if (!info) {
+            console.error(`Invalid index: ${store[i]} in jsonData3`);
+            continue;
+        }
+
         let box = document.createElement('div');
         box.classList = 'presidentpic';
 
-        //pic
+        // pic
         let picture = document.createElement('img');
-        picture.classList.add(store[i]);
+        picture.classList.add(`pic-${store[i]}`);
         picture.src = info['IMG filepath'];
-        console.log(info['IMG filepath'])
+        console.log(info['IMG filepath']);
         box.appendChild(picture);
         conts.appendChild(box);
     }
-
-   
 }
 
 let inputBox = document.getElementById('input-box');
-
 let score = 0; 
-inputBox.addEventListener("keydown", function(event){
-    if(event.key === 'Enter'){
-        const enterValue = inputBox.value; 
-        console.log("User press Enter", enterValue);
+
+inputBox.addEventListener("keydown", function(event) {
+    if (event.key === 'Enter') {
+        const enterValue = inputBox.value.trim();
+        console.log("User pressed Enter", enterValue);
+
         for (let i = 0; i < store.length; i++) {
-            mydata = jsonData3[store[i]];
-            console.log(mydata['Name'])
+            let mydata = jsonData3[store[i]];
+            if (!mydata) continue;
+
+            console.log(mydata['Name']);
             const { firstName, lastName } = getFirstAndLastName(mydata['Name']);
-            if(mydata['Name'] === enterValue || firstname === enterValue || lastName === enterValue){
-                let mypic = document.getElementsByClassName(store[i]);
+
+            if (
+                mydata['Name'].toLowerCase() === enterValue.toLowerCase() ||
+                firstName.toLowerCase() === enterValue.toLowerCase() ||
+                lastName.toLowerCase() === enterValue.toLowerCase()
+            ) {
+                let mypic = document.getElementsByClassName(`pic-${store[i]}`);
                 for (let element of mypic) {
                     element.style.setProperty('border', '15px solid green', 'important');
                     console.log(element);
@@ -98,12 +103,10 @@ inputBox.addEventListener("keydown", function(event){
                 score++; 
                 console.log(score);
             }
-
-               
         }
+
         inputBox.value = "";
     }
-})
+});
 
 getData2();
-
