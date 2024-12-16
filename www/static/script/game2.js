@@ -39,6 +39,7 @@ function getFirstAndLastName(fullName) {
 }
 
 let store = []; 
+let guessedCorrectly = new Set(); // Track correctly guessed indices
 function getpicture2() {
     let conts = document.querySelector('.mypresident');
     console.log("getpicture2 called");
@@ -91,17 +92,25 @@ inputBox.addEventListener("keydown", function(event) {
             const { firstName, lastName } = getFirstAndLastName(mydata['Name']);
 
             if (
-                mydata['Name'].toLowerCase() === enterValue.toLowerCase() ||
-                firstName.toLowerCase() === enterValue.toLowerCase() ||
-                lastName.toLowerCase() === enterValue.toLowerCase()
+                !guessedCorrectly.has(store[i]) && // Only increase score if not already guessed
+                (
+                    mydata['Name'].toLowerCase() === enterValue.toLowerCase() ||
+                    firstName.toLowerCase() === enterValue.toLowerCase() ||
+                    lastName.toLowerCase() === enterValue.toLowerCase()
+                )
             ) {
+                guessedCorrectly.add(store[i]); // Mark as guessed correctly
                 let mypic = document.getElementsByClassName(`pic-${store[i]}`);
                 for (let element of mypic) {
                     element.style.setProperty('border', '15px solid green', 'important');
                     console.log(element);
                 }
                 score++; 
-                console.log(score);
+                console.log(`Score: ${score}`);
+                if (score === 5) {
+                    console.log("Maximum score reached!");
+                    //console.log("congratulation")
+                }
             }
         }
 
