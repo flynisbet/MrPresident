@@ -78,10 +78,10 @@ function placeInfo(){
         box.appendChild(years);
 
         //description
-        let presDescription = document.createTextNode(presInfo['Description']);
-        let description = document.createElement('p');
-        description.appendChild(presDescription);
-        box.appendChild(description);
+        // let presDescription = document.createTextNode(presInfo['Description']);
+        // let description = document.createElement('p');
+        // description.appendChild(presDescription);
+        // box.appendChild(description);
 
         // Add textbox to container, add container to list of containers
         cont.appendChild(box);

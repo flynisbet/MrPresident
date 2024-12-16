@@ -1,53 +1,88 @@
 {% extends 'layout.html' %}
-{% block viewport%}  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock%}
-
+{% block viewport %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
 {% block title %} Presidential Timeline {% endblock %}
-
 {% block content %}
-<!-- link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"-->
-<link rel="stylesheet" href="static/css/home.css"> 
-
+<link rel="stylesheet" href="static/css/home.css">
 <header>
-    <img src="static/img/dec_of_ind.jpg" alt="Banner Image">
+    <img src="static/img/mountrush.png" alt="Banner Image">
 </header>
 <main>
-    <div class = "description-cont">
+    <div class="description-cont">
         <div class="description-text">
-            <p>Step into the immersive world of American history, where the past comes alive through a dynamic timeline, engaging quizzes, and a customizable ranking system that sparks debates. Each president is brought to life with in-depth profile pages, complete with fascinating details and pivotal moments from their tenure. </p>
-            <h1>This is not just a site—it's a journey through the legacy of leadership that shaped a nation.</h1>
+            <p>Step into the immersive world of American history, where the past comes alive through our timeline, quizzes, and live ranking system. Each president is brought to life with their own profile page, complete with facts and moments from their tenure.</p>
         </div>
     </div>
     <div class="container">
-    <div class = 'row'>
-        <div class="item">
-            <a href="timeline">
-            <img src="static/img/timeline.png" alt="timelines">
-            </a>
-            <a href="timeline">Timeline</a>
+        <div class="row timeline-row">
+            <div class="row-icon">
+                <img src="static/img/timeline.png" alt="Timeline Icon">
+            </div>
+            <div class="row-content">
+                <div class="row-description">
+                    <h2>Timeline</h2>
+                    <p>Explore the chronological journey of American presidents, from George Washington to the present day. Discover key moments, achievements, and historical context.</p>
+                </div>
+                <div class="row-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_Ck1AyrlOPQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row-link">
+                <a href="/timeline">Explore Timeline</a>
+            </div>
         </div>
-        <div class="item">
-            <a href="game">
-            <img src="static/img/mc.png" alt="mc">
-            </a>
-            <a href="/game">Game</a>
+        <div class="row game-row">
+            <div class="row-icon">
+                <img src="static/img/quiz_icon.png" alt="Game Icon">
+            </div>
+            <div class="row-content">
+                <div class="row-description">
+                    <h2>Quizzes</h2>
+                    <p>Test your knowledge of American presidential history through an interactive and engaging quiz game. Challenge yourself and learn fascinating facts!</p>
+                </div>
+                <div class="row-video">
+                    <img src = ''>
+                </div>
+            </div>
+            <div class="row-link">
+                <a href="/game">Play Game</a>
+            </div>
         </div>
-    </div>
-    <div class = 'row'>
-        <div class="item">
-            <a href="rank">
-            <img src="static/img/ranking.png" alt="pf">
-            </a>
-            <a href="rank">Rank</a>
+        <div class="row ranking-row">
+            <div class="row-icon">
+                <img src="static/img/ranking.png" alt="Ranking Icon">
+            </div>
+            <div class="row-content">
+                <div class="row-description">
+                    <h2>Rankings</h2>
+                    <p>Compare and rank presidents based on various historical metrics, achievements, and impact. See how different historians and scholars evaluate presidential legacies.</p>
+                </div>
+                <div class="row-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A_9HaCYWGS8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row-link">
+                <a href="/rank">View Rankings</a>
+            </div>
         </div>
-        <div class="item">
-            <a href="about">
-            <img src="static/img/about.png" alt="about">
-           
-            </a>
-            <a href="about">About</a>
+        <div class="row about-row">
+            <div class="row-icon">
+                <img src="static/img/about.png" alt="About Icon">
+            </div>
+            <div class="row-content">
+                <div class="row-description">
+                    <h2>About Us</h2>
+                    <p>Learn about our mission to make presidential history accessible, engaging, and educational. Discover the passion behind our platform and our commitment to historical storytelling.</p>
+                </div>
+                <div class="row-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eqbiE6mRp7U" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row-link">
+                <a href="/about">Learn More</a>
+            </div>
         </div>
-    </div>
     </div>
 </main>
-
 {% endblock %}
