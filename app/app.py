@@ -52,7 +52,7 @@ def create_app(shared_server=False):
     def about(): 
         return render_template('about.html', page_title = "About_Page")
 
-    @app.route(prepend + "/game/1")
+    @app.route(prepend + "/game1")
     def quizGame():
         return render_template("game/quiz_game.html")
 
@@ -60,7 +60,7 @@ def create_app(shared_server=False):
     def Hi():
         return render_template("game/game.html")
 
-    @app.route(prepend + "/game/2")
+    @app.route(prepend + "/game2")
     def game2():
         return render_template("game/guess_game.html")
 
