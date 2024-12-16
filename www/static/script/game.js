@@ -3,7 +3,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 async function getQuestion() {
-    const url = "http://127.0.0.1:81/preQuiz";
+    const url = "static/json/preQuiz";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -100,4 +100,4 @@ window.onload = function() {
 };
 
 
-//game2
+//game2d
