@@ -3,7 +3,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 async function getQuestion() {
-    const url = "./static/json/mrPresident.json";
+    const url = "./static/json/mrPresidentQuiz.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -13,6 +13,7 @@ async function getQuestion() {
 
         questions = await response.json(); 
         console.log(questions);
+    
         startQuiz(); 
         
     } catch (error) {
@@ -103,4 +104,3 @@ window.onload = function() {
 };
 
 
-//game2d
