@@ -10,8 +10,8 @@ async function getQuestion() {
             throw new Error(`Response status: ${response.status}`);
         }
 
-        questions = await response.json(); // Store questions here
-        startQuiz(); // Call startQuiz after questions are loaded
+        questions = await response.json(); 
+        startQuiz(); 
     } catch (error) {
         console.error(error.message);
     }
