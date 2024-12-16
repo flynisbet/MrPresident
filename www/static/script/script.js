@@ -8,11 +8,10 @@ function toggleMenu(){
 
 async function getData() {
     const baseUrl = window.location.origin; 
-    const route = "/pres"; 
-    const url = `${baseUrl}${route}`;
+   
      console.log("Hello world");
     try {
-        const response = await fetch(url);
+        const response = await fetch(baseUrl);
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
