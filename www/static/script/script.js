@@ -7,11 +7,11 @@ function toggleMenu(){
 }
 
 async function getData() {
-    const baseUrl = window.location.origin; 
+    url = "static/json/mrPresident.json"
    
-     console.log("Hello world");
+    console.log("Hello world");
     try {
-        const response = await fetch(baseUrl);
+        const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
