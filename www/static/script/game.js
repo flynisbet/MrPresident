@@ -3,7 +3,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 async function getQuestion() {
-    const url = "./static/json/mrPresidentQuiz.json";
+    const url = "./static/json/mrPresident.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -12,8 +12,6 @@ async function getQuestion() {
         }
 
         questions = await response.json(); 
-        console.log(questions);
-    
         startQuiz(); 
         
     } catch (error) {
@@ -82,9 +80,10 @@ function selectAnswer(button, isCorrect) {
         if (currentQuestionIndex < questions.length - 1) {
             handleNextButton();
         } else {
-            startQuiz(); // Restart quiz when finished
+            showScore(); // Show score when the quiz is finished
         }
     };
+    
 }
 
 function handleNextButton() {
