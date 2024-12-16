@@ -3,7 +3,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 async function getQuestion() {
-    const url = "../static/json/mrPresident.json";
+    const url = "static/json/mrPresident.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
