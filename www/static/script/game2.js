@@ -1,7 +1,7 @@
 let jsonData3; // Ensure jsonData3 is declared globally once
 
 async function getData2() {
-    const url = "static/json/mrPresidentQuiz.json";
+    const url = "../static/json/mrPresidentQuiz.json";
     try {
         if (jsonData3) {
             console.log("Data already fetched, skipping fetch.");
