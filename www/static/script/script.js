@@ -67,7 +67,7 @@ function placeInfo(){
        name.appendChild(presName);
        let name_link = document.createElement('a');
        name_link.appendChild(name);
-       name_link.href = `/president/${presInfo['No']}`;
+       name_link.href = `president${presInfo['No']}`;
        box.appendChild(name_link);
 
         //years
