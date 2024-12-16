@@ -647,3 +647,173 @@ table.presidentList th {
 table.presidentList td {
     text-align: center;
 }
+
+
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid var(--humbar-color);
+}
+
+.description-cont {
+    background-color: var(--search-box);
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+.description-cont:hover {
+    transform: scale(1.02);
+}
+
+.description-text p {
+    font-size: 1.3em;
+    color: var(--primary-text);
+    margin: 0;
+    line-height: 1.8;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: var(--textbox-color);
+    color: var(--primary-text);
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+.row:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.row-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.row-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.row-description {
+    width: 100%;
+    padding: 10px;
+}
+
+.row-description h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--primary-text);
+    text-transform: uppercase;
+}
+
+.row-description p {
+    font-size: 1.2em;
+    color: var(--primary-text);
+    line-height: 1.8;
+}
+
+.row-link {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: var(--textbox-color);
+    border-top: 1px solid var(--humbar-color);
+    margin-top: 20px;
+    border-radius: 0 0 12px 12px;
+}
+
+.row-link a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--background-color);
+    color: var(--primary-text);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-weight: bold;
+}
+.row-link a:hover {
+    background-color: var(--component-base-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+
+    .row {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .row-content {
+        gap: 15px;
+    }
+
+    .row-description h2 {
+        font-size: 1.5em;
+    }
+
+    .row-description p {
+        font-size: 1.1em;
+    }
+
+    .row-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .row-link a {
+        padding: 10px 20px;
+    }
+}
+
+/* General styling for row videos */
+.row-video iframe, .row-video img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .row-video iframe, .row-video img {
+        width: 90%; 
+        max-width: 300px; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+}
