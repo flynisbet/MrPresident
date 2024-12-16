@@ -27,6 +27,21 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function getFirstAndLastName(fullName) {
+    if (!fullName.trim()) {
+        return { firstName: "", lastName: "" }; // Handle empty input
+    }
+
+    const nameParts = fullName.trim().split(/\s+/);
+    const firstName = nameParts[0];
+    const lastName = nameParts[nameParts.length - 1];
+
+    return { firstName, lastName };
+}
+
+
+
+
 let store = []; 
 function getpicture2() {
     let conts = document.querySelector('.mypresident');
@@ -73,7 +88,8 @@ inputBox.addEventListener("keydown", function(event){
         for (let i = 0; i < store.length; i++) {
             mydata = jsonData3[store[i]];
             console.log(mydata['Name'])
-            if(mydata['Name'] === enterValue){
+            const { firstName, lastName } = getFirstAndLastName(mydata['Name']);
+            if(mydata['Name'] === enterValue || firstname === enterValue || lastName === enterValue){
                 let mypic = document.getElementsByClassName(store[i]);
                 for (let element of mypic) {
                     element.style.setProperty('border', '15px solid green', 'important');
@@ -89,9 +105,5 @@ inputBox.addEventListener("keydown", function(event){
     }
 })
 
-
-
-
-
 getData2();
-//game 1d
+
