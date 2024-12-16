@@ -3,15 +3,16 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 async function getQuestion() {
-    const url = "./static/json/mrPresident.json";
+    const url = "./static/json/mrPresidentQuiz.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            
             throw new Error(`Response status: ${response.status}`);
         }
 
         questions = await response.json(); 
+        console.log(questions);
+    
         startQuiz(); 
         
     } catch (error) {
@@ -24,8 +25,10 @@ const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn"); 
 
 function startQuiz() {
+    currentQuestionIndex = 0; 
+    score = 0; 
     nextButton.innerHTML = "Next"; 
-    showQuestion(); // Call showQuestion after questions are loaded
+    showQuestion(); 
 }
 
 async function showQuestion() {
@@ -68,7 +71,7 @@ function selectAnswer(button, isCorrect) {
         button.style.backgroundColor = "red";
     }
 
-    // Highlight the correct answer in green
+   
     Array.from(answerButton.children).forEach(btn => {
         if (btn.textContent === questions[currentQuestionIndex].answers.find(answer => answer.correct).text) {
             btn.style.backgroundColor = "green";
@@ -80,10 +83,9 @@ function selectAnswer(button, isCorrect) {
         if (currentQuestionIndex < questions.length - 1) {
             handleNextButton();
         } else {
-            showScore(); // Show score when the quiz is finished
+            showScore(); 
         }
     };
-    
 }
 
 function handleNextButton() {
@@ -96,10 +98,11 @@ function showScore() {
         answerButton.removeChild(answerButton.firstChild);
     }
     questionElement.innerHTML = `Your Score is ${score} out of ${questions.length}`;
+    nextButton.innerHTML = "Restart"; 
+    nextButton.style.display = "block";
+    nextButton.onclick = startQuiz; 
 }
 
 window.onload = function() {
-    getQuestion(); // Fetch questions when the page loads
+    getQuestion(); 
 };
-
-

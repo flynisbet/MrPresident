@@ -55,6 +55,7 @@ function getpicture2() {
         let picture = document.createElement('img');
         picture.classList.add(store[i]);
         picture.src = info['IMG filepath'];
+        console.log(info['IMG filepath'])
         box.appendChild(picture);
         conts.appendChild(box);
     }
