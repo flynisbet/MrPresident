@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             score: selectedRating
         };
 
-        fetch('http://127.0.0.1:81/add-rating', {
+        fetch('/add-rating', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
