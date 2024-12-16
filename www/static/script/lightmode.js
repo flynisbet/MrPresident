@@ -22,3 +22,5 @@ for (let i = 0; i < switchModeElements.length; i++) {
         }
     });
 }
+
+//dark and light mode

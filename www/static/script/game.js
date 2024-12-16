@@ -98,3 +98,6 @@ function showScore() {
 window.onload = function() {
     getQuestion(); // Fetch questions when the page loads
 };
+
+
+//game2

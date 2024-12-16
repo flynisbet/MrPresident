@@ -93,3 +93,4 @@ inputBox.addEventListener("keydown", function(event){
 
 
 getData2();
+//game 1

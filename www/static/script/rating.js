@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const submitButton = document.getElementById('submit-rating');
     const localStorageKey = `rating_${presidentName}`; 
 
-    // Check if a rating is already saved in localStorage
+    
     const savedRating = localStorage.getItem(localStorageKey);
     if (savedRating) {
         selectedRating = savedRating; 
