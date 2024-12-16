@@ -7,9 +7,10 @@ function toggleMenu(){
 }
 
 async function getData() {
-     const baseUrl = window.location.origin; 
-     const route = "/pres"; // Specify your desired route
-     const url = `${baseUrl}${route}`; // Combine to form the full URL
+    const baseUrl = window.location.origin; 
+    const route = "/pres"; 
+    const url = `${baseUrl}${route}`;
+     console.log("Hello world");
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -21,6 +22,8 @@ async function getData() {
         console.error(error.message);
     }
 }
+
+
 
 let presidents = []; 
 function placeInfo(){
