@@ -24,7 +24,7 @@ def create_app(shared_server=False):
     def ranking():
         with get_db() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT presidentID, presidentName,Score, AVG(CAST(Score AS FLOAT) / NULLIF(numVote, 0)) AS AverageScorePerVote FROM President GROUP BY presidentID ORDER BY AverageScorePerVote DESC;')
+            cursor.execute('SELECT presidentID, numVote, presidentName,Score, AVG(CAST(Score AS FLOAT) / NULLIF(numVote, 0)) AS AverageScorePerVote FROM President GROUP BY presidentID ORDER BY AverageScorePerVote DESC;')
             users = cursor.fetchall()
         return render_template('ranking.html', page_title = "Ranking", presidents = users)
 
